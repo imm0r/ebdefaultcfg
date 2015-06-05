@@ -50,105 +50,17 @@
 
 // If you want to reroll map in case of bad mods detected (thanks to immo, zeMagic and the community for the list)
 // [map_monsters_reflect_%_physical_damage] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true"
-// [map_player_has_blood_magic_keystone] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true"
-// [map_player_status_recovery_speed_+%] < "0" && [Rarity] == "Magic" # [RerollMods] == "true"
-// [no_mana_regeneration] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true"
-// [no_life_regeneration] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true"
+[map_player_has_blood_magic_keystone] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true"
+// [map_player_status_recovery_speed_+%] < "0" && [Rarity] == "Magic" # [RerollMods] == "true" // Life, mana and  es recovery 50% slower
+// [no_mana_regeneration] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // No mana regen
+// [no_life_regeneration] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // No life regen
+// [map_player_no_regeneration] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // No life / mana regen
+
 // [map_player_has_level_X_temporal_chains] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true"
 // [map_spawn_two_bosses] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true"
 
 //rogue Exile
 // [map_spawn_extra_exiles] > "0" && [Rarity] == "Magic" # [RerollMods] == "true"
-
-/////////////////////////////////////////////////////////////////////////////////////
-//                                                                                 //
-//                                   PREFIXES                                      //
-//                                                                                 //
-///////////////////////////////////////////////////////////////////////////////////// 
-
-// Thanks to  XeroKill for the hard work
-
-// Some mods have multiple entries, such as Fleet and Overlord's, uncommenting anyone of them is sufficient but I included each entry for completeness. 
-// You can change the value in the "0" tag to anything you desire within the ranges specified in order to better adjust exactly which mods you want to roll.
-// Everything is currently set to a "greater than zero" format for a simple on/off toggle. SO any value return that is greater than zero will reroll the map if that item is not commented.
-
-// Would be good to have somebody replace all the skills number id by their string equivalent. (ie : [is_twinned_unique_boss] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" instead of [1004] > "0" && [Rarity] == "Magic" # [RerollMods] == "true").
-
-// [1004] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Twinned         -- Area contains two Unique Bosses                   -- Value : 0 - 1 (True or False)
-// [1005] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Overlord's      -- Unique Boss Deals +X% Damage                      -- Value : 30%
-// [1006] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Overlord's      -- Unique Boss Attacks X% Faster                     -- Value : 25%
-// [1007] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Incombustible   -- +X% Monster Fire Resistance                       -- Value : 75%
-// [1008] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Molten          -- +X% Monster Cold Resistance                       -- Value : 75%
-// [1009] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Grounded        -- +X% Monster Lightning Resistance                  -- Value : 75%
-// [1010] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Armoured        -- X% Monster Physical Resistance                    -- Value : 30%
-// [1011] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Unwavering      -- Monsters cannot be Stunned                        -- Value : 0 - 1 (True or False)
-// [1012] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Fecund          -- X% increased Monster Life                         -- Value : 25% - 35%
-// [1013] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Deadly          -- X% increased Monster Damage                       -- Value : 25% - 35%
-// [1014] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Fleet           -- X% increased Monster Movement Speed               -- Value : 25% - 35%
-// [1015] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Fleet           -- X% increased Monster Attack Speed                 -- Value : 25% - 35%
-// [1016] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Fleet           -- X% increased Monster Cast Speed                   -- Value : 25% - 35%
-// [1017] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Punishing       -- Monsters reflect X% of Physical Damage            -- Value : 18%
-// [1018] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Mirrored        -- Monsters reflect X% of Elemental Damage           -- Value : 18%
-// [1019] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Splitting       -- Monsters fire x additional Projectiles            -- Value : 2 - 4
-// [1039] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Ceremonial      -- Area Contains Many Totems                         -- Value : 0 - 1 (True or False)
-// [1040] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Skeletal        -- Area is inhabited by Skeletons                    -- Value : 0 - 1 (True or False)
-// [1042] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Capricious      -- Area is inhabited by Goatmen                      -- Value : 0 - 1 (True or False)
-// [1043] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Slithering      -- Area is inhabited by Sea Witches and their Spawn  -- Value : 0 - 1 (True or False)
-// [1044] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Undead          -- Area is inhabited by Undead                       -- Value : 0 - 1 (True or False)
-// [1045] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Emanant         -- Area is inhabited by Ranged Monsters              -- Value : 0 - 1 (True or False)
-// [1054] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Burning         -- Monsters deal X% extra Damage as Fire             -- Value : 80% - 100%
-// [1055] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Freezing        -- Monsters deal X% extra Damage as Cold             -- Value : 80% - 100%
-// [1056] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Shocking        -- Monsters deal X% extra Damage as Lightning        -- Value : 80% - 100%
-// [1060] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Multifarious    -- Area has increased monster variety                -- Value : 3
-// [1320] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Chaining        -- Monsters' Skills Chain X additional times         -- Value : 2
-// [1921] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Antagonist's    -- Rare Monsters Each have a Nemesis Mod             -- Value : 0 - 1 (True or False)
-// [2074] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Hexproof        -- Monsters are Immune to Curses                     -- Value : 0 - 1 (True or False)
-// [2075] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Feral           -- Area is inhabited by Animals                      -- Value : 0 - 1 (True or False)
-// [2076] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Demonic         -- Area is inhabited by Demons                       -- Value : 0 - 1 (True or False)
-// [2077] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Bipedal         -- Area is inhabited by Humanoids                    -- Value : 0 - 1 (True or False)
-// [2302] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Anarchic        -- Area is inhabited by X additional Rogue Exiles    -- Value : 2
-// [1703] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Anarchic        -- Area is inhabited by X additional Rogue Exiles    -- Value : 1
-
-
-// **NOTE** [2302] & [1703] always show up together on maps with 2 Additional Rogue Exiles. You may need to uncomment both values in order to reroll. UNTESTED
-
-
-/////////////////////////////////////////////////////////////////////////////////////
-//                                                                                 //
-//                                   SUFFIXES                                      //
-//                                                                                 //
-/////////////////////////////////////////////////////////////////////////////////////
-
-// Thanks to  XeroKill for the hard work
-
-// [1020] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Vulnerability        -- Players are cursed with Vulnerability                     -- Value : 15 (Level 15)
-// [1022] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Enfeeblement         -- Players are cursed with Enfeeble                          -- Value : 15 (Level 15)
-// [1023] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Elemental Weakness   -- Players are cursed with Elemental Weakness                -- Value : 15 (Level 15)
-// [1024] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Temporal Chains      -- Players are cursed with Temporal Chains                   -- Value : 15 (Level 15)
-// [1025] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Stasis               -- Players cannot regenerate Life or Mana                    -- Value : 0 - 1 (True or False)
-// [1029] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Hemomancy            -- Player has Keystone Blood Magic                           -- Value : 0 - 1 (True or False)
-// [1030] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Balance              -- Player has Keystone Elemental Equilibrium                 -- Value : 0 - 1 (True or False)
-// [1032] < "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Exposure             -- -X% maximum Player Resistances                            -- Value : -15% to -25%
-// [1033] < "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Smothering           -- Players recover Life, Mana and Energy Shield X% slower    -- Value : -50%
-// [1046] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Hordes               -- +X% Monster pack size                                     -- Value : 20% - 50%
-// [1047] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Champion's           -- X% more Magic Monsters                                    -- Value : 20% - 50% 
-// [1048] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Commander's          -- X% more Rare Monsters                                     -- Value : 20% - 50%
-// [1049] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Flames               -- Area has patches of burning ground                        -- Value : 15000
-// [1059] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Frenzy               -- Monsters gain X Frenzy Charges every 20 seconds           -- Value : 1 - 3
-// [1065] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Ice                  -- Area has patches of chilled ground                        -- Value : 1
-// [2053] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Lightning            -- Area has patches of shocking ground                       -- Value : 0 - 1 (True or False)
-// [2080] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Power                -- Monsters gain X Power Charges every 20 seconds            -- Value : 1 - 3
-// [2081] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Endurance            -- Monsters gain X Endurance Charges every 20 seconds        -- Value : 1 - 3
-// [2142] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Fracturing           -- Monsters Fracture                                         -- Value : 2
-// [2370] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Desecration          -- Area has patches of desecrated ground                     -- Value : 10000
-// [2372] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Venom                -- Monsters Poison on Hit                                    -- Value : 0 - 1 (True or False)
-
-
-// You can uncomment either of the two entries below to disable ALL ground effects. (Chilled, Desecrated, Shocking, Burning)
-
-
-// [1062] = > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Ground Effects        -- Area has patches of X ground                              -- Value : 20
-// [1064] = > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Ground Effects        -- Area has patches of X ground        
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
@@ -169,11 +81,11 @@
 
 // MOM + ARCTIC ARMOUR to survive
 // [Type] == "Jungle Valley Map" # [IgnoreMap] == "true"// endless stream of small spiders, takes forever to kill.
-// [Type] == "Maze Map" # [IgnoreMap] == "true"// remove if your build has MOM + arctic armour
 
 //RETARD BOSS
 // [Type] == "Residence Map" # [IgnoreMap] == "true"
 // [Type] == "Palace Map" # [IgnoreMap] == "true"
+// [Type] == "Maze Map" # [IgnoreMap] == "true"
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
@@ -271,3 +183,93 @@
 // [Type] == "Strand Map" && [Rarity] == "Unique" # [IgnoreMap] == "true" // Whakawairua Tuahu
 // [Type] == "Maze Map" && [Rarity] == "Unique" # [IgnoreMap] == "true" // Olmec's Sanctum
 // [Type] == "Necropolis Map" && [Rarity] == "Unique" # [IgnoreMap] == "true" // Death and Taxes
+
+/////////////////////////////////////////////////////////////////////////////////////
+//                                                                                 //
+//                                   PREFIXES                                      //
+//                                                                                 //
+///////////////////////////////////////////////////////////////////////////////////// 
+
+// Thanks to  XeroKill for the hard work
+
+// Some mods have multiple entries, such as Fleet and Overlord's, uncommenting anyone of them is sufficient but I included each entry for completeness. 
+// You can change the value in the "0" tag to anything you desire within the ranges specified in order to better adjust exactly which mods you want to roll.
+// Everything is currently set to a "greater than zero" format for a simple on/off toggle. SO any value return that is greater than zero will reroll the map if that item is not commented.
+
+// Would be good to have somebody replace all the skills number id by their string equivalent. (ie : [is_twinned_unique_boss] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" instead of [1004] > "0" && [Rarity] == "Magic" # [RerollMods] == "true").
+
+// [1004] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Twinned         -- Area contains two Unique Bosses                   -- Value : 0 - 1 (True or False)
+// [1005] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Overlord's      -- Unique Boss Deals +X% Damage                      -- Value : 30%
+// [1006] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Overlord's      -- Unique Boss Attacks X% Faster                     -- Value : 25%
+// [1007] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Incombustible   -- +X% Monster Fire Resistance                       -- Value : 75%
+// [1008] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Molten          -- +X% Monster Cold Resistance                       -- Value : 75%
+// [1009] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Grounded        -- +X% Monster Lightning Resistance                  -- Value : 75%
+// [1010] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Armoured        -- X% Monster Physical Resistance                    -- Value : 30%
+// [1011] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Unwavering      -- Monsters cannot be Stunned                        -- Value : 0 - 1 (True or False)
+// [1012] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Fecund          -- X% increased Monster Life                         -- Value : 25% - 35%
+// [1013] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Deadly          -- X% increased Monster Damage                       -- Value : 25% - 35%
+// [1014] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Fleet           -- X% increased Monster Movement Speed               -- Value : 25% - 35%
+// [1015] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Fleet           -- X% increased Monster Attack Speed                 -- Value : 25% - 35%
+// [1016] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Fleet           -- X% increased Monster Cast Speed                   -- Value : 25% - 35%
+// [1017] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Punishing       -- Monsters reflect X% of Physical Damage            -- Value : 18%
+// [1018] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Mirrored        -- Monsters reflect X% of Elemental Damage           -- Value : 18%
+// [1019] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Splitting       -- Monsters fire x additional Projectiles            -- Value : 2 - 4
+// [1039] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Ceremonial      -- Area Contains Many Totems                         -- Value : 0 - 1 (True or False)
+// [1040] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Skeletal        -- Area is inhabited by Skeletons                    -- Value : 0 - 1 (True or False)
+// [1042] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Capricious      -- Area is inhabited by Goatmen                      -- Value : 0 - 1 (True or False)
+// [1043] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Slithering      -- Area is inhabited by Sea Witches and their Spawn  -- Value : 0 - 1 (True or False)
+// [1044] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Undead          -- Area is inhabited by Undead                       -- Value : 0 - 1 (True or False)
+// [1045] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Emanant         -- Area is inhabited by Ranged Monsters              -- Value : 0 - 1 (True or False)
+// [1054] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Burning         -- Monsters deal X% extra Damage as Fire             -- Value : 80% - 100%
+// [1055] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Freezing        -- Monsters deal X% extra Damage as Cold             -- Value : 80% - 100%
+// [1056] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Shocking        -- Monsters deal X% extra Damage as Lightning        -- Value : 80% - 100%
+// [1060] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Multifarious    -- Area has increased monster variety                -- Value : 3
+// [1320] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Chaining        -- Monsters' Skills Chain X additional times         -- Value : 2
+// [1921] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Antagonist's    -- Rare Monsters Each have a Nemesis Mod             -- Value : 0 - 1 (True or False)
+// [2074] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Hexproof        -- Monsters are Immune to Curses                     -- Value : 0 - 1 (True or False)
+// [2075] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Feral           -- Area is inhabited by Animals                      -- Value : 0 - 1 (True or False)
+// [2076] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Demonic         -- Area is inhabited by Demons                       -- Value : 0 - 1 (True or False)
+// [2077] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Bipedal         -- Area is inhabited by Humanoids                    -- Value : 0 - 1 (True or False)
+// [2302] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Anarchic        -- Area is inhabited by X additional Rogue Exiles    -- Value : 2
+// [1703] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Anarchic        -- Area is inhabited by X additional Rogue Exiles    -- Value : 1
+
+
+// **NOTE** [2302] & [1703] always show up together on maps with 2 Additional Rogue Exiles. You may need to uncomment both values in order to reroll. UNTESTED
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+//                                                                                 //
+//                                   SUFFIXES                                      //
+//                                                                                 //
+/////////////////////////////////////////////////////////////////////////////////////
+
+// Thanks to  XeroKill for the hard work
+
+// [1020] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Vulnerability        -- Players are cursed with Vulnerability                     -- Value : 15 (Level 15)
+// [1022] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Enfeeblement         -- Players are cursed with Enfeeble                          -- Value : 15 (Level 15)
+// [1023] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Elemental Weakness   -- Players are cursed with Elemental Weakness                -- Value : 15 (Level 15)
+// [1024] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Temporal Chains      -- Players are cursed with Temporal Chains                   -- Value : 15 (Level 15)
+// [1025] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Stasis               -- Players cannot regenerate Life or Mana                    -- Value : 0 - 1 (True or False)
+// [1029] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Hemomancy            -- Player has Keystone Blood Magic                           -- Value : 0 - 1 (True or False)
+// [1030] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Balance              -- Player has Keystone Elemental Equilibrium                 -- Value : 0 - 1 (True or False)
+// [1032] < "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Exposure             -- -X% maximum Player Resistances                            -- Value : -15% to -25%
+// [1033] < "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Smothering           -- Players recover Life, Mana and Energy Shield X% slower    -- Value : -50%
+// [1046] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Hordes               -- +X% Monster pack size                                     -- Value : 20% - 50%
+// [1047] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Champion's           -- X% more Magic Monsters                                    -- Value : 20% - 50% 
+// [1048] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Commander's          -- X% more Rare Monsters                                     -- Value : 20% - 50%
+// [1049] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Flames               -- Area has patches of burning ground                        -- Value : 15000
+// [1059] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Frenzy               -- Monsters gain X Frenzy Charges every 20 seconds           -- Value : 1 - 3
+// [1065] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Ice                  -- Area has patches of chilled ground                        -- Value : 1
+// [2053] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Lightning            -- Area has patches of shocking ground                       -- Value : 0 - 1 (True or False)
+// [2080] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Power                -- Monsters gain X Power Charges every 20 seconds            -- Value : 1 - 3
+// [2081] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Endurance            -- Monsters gain X Endurance Charges every 20 seconds        -- Value : 1 - 3
+// [2142] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Fracturing           -- Monsters Fracture                                         -- Value : 2
+// [2370] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Desecration          -- Area has patches of desecrated ground                     -- Value : 10000
+// [2372] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- of Venom                -- Monsters Poison on Hit                                    -- Value : 0 - 1 (True or False)
+
+
+// You can uncomment either of the two entries below to disable ALL ground effects. (Chilled, Desecrated, Shocking, Burning)
+
+
+// [1062] = > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Ground Effects        -- Area has patches of X ground                              -- Value : 20
+// [1064] = > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // -- Ground Effects        -- Area has patches of X ground        
