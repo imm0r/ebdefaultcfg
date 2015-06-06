@@ -19,8 +19,12 @@
 // If you want to enable automatic quality upgrading
 // [MapLevel] >= "70" && [Quality] <= "16" && [Rarity] == "Normal" # [UpgradeQuality] == "true"
 
-// If you want to transmut maps before running them
+// If you want to reroll mods if map quality is less than 20.
+// [Quality] <= "20" && [Rarity] == "Magic" # [RerollMods] == "true"
+
+// If you want to transmut or alch maps before running them. Be careful UpgradeToMagic and UpgradeToRare aren't compatible.
 // [Rarity] == "Normal" # [UpgradeToMagic] == "true"
+// [Rarity] == "Normal" # [UpgradeToRare] == "true"
 
 // Use this to roll for a specific amount of Item Quantity **(DOES NOT INCLUDE QUANTITY FROM QUALITY)**
 // [map_item_drop_quantity_+%] < "30" && [Rarity] == "Magic" # [RerollMods] == "true" // -- ITEM QUANTITY   -- Total Item Quantity of the ** MAP MODS ONLY ** 
@@ -50,17 +54,27 @@
 
 // If you want to reroll map in case of bad mods detected (thanks to immo, zeMagic and the community for the list)
 // [map_monsters_reflect_%_physical_damage] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true"
+// [map_monsters_reflect_%_elemental_damage] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true"
 [map_player_has_blood_magic_keystone] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true"
 // [map_player_status_recovery_speed_+%] < "0" && [Rarity] == "Magic" # [RerollMods] == "true" // Life, mana and  es recovery 50% slower
 // [no_mana_regeneration] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // No mana regen
 // [no_life_regeneration] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // No life regen
 // [map_player_no_regeneration] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // No life / mana regen
-
 // [map_player_has_level_X_temporal_chains] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true"
 // [map_spawn_two_bosses] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true"
+// [map_spawn_extra_exiles] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // Rogue exile
 
-//rogue Exile
-// [map_spawn_extra_exiles] > "0" && [Rarity] == "Magic" # [RerollMods] == "true"
+
+// [map_monsters_reflect_%_physical_damage] >= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true"
+// [map_monsters_reflect_%_elemental_damage] >= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true"
+[map_player_has_blood_Rare_keystone] >= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true"
+// [map_player_status_recovery_speed_+%] < "0" && [Rarity] == "Rare" # [IgnoreMap] == "true" // Life, mana and  es recovery 50% slower
+// [no_mana_regeneration] >= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true" // No mana regen
+// [no_life_regeneration] >= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true" // No life regen
+// [map_player_no_regeneration] >= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true" // No life / mana regen
+// [map_player_has_level_X_temporal_chains] >= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true"
+// [map_spawn_two_bosses] >= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true"
+// [map_spawn_extra_exiles] > "0" && [Rarity] == "Rare" # [IgnoreMap] == "true"
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
