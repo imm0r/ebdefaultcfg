@@ -19,15 +19,12 @@
 // If you want to enable automatic quality upgrading
 // [MapLevel] >= "70" && [Quality] <= "16" && [Rarity] == "Normal" # [UpgradeQuality] == "true"
 
-// If you want to reroll mods if map quality is less than 20.
-// [Quality] <= "20" && [Rarity] == "Magic" # [RerollMods] == "true"
-
 // If you want to transmut or alch maps before running them. Be careful UpgradeToMagic and UpgradeToRare aren't compatible.
 // [Rarity] == "Normal" # [UpgradeToMagic] == "true"
 // [Rarity] == "Normal" # [UpgradeToRare] == "true"
 
 // Use this to roll for a specific amount of Item Quantity **(DOES NOT INCLUDE QUANTITY FROM QUALITY)**
-// [map_item_drop_quantity_+%] < "30" && [Rarity] == "Magic" # [RerollMods] == "true" // -- ITEM QUANTITY   -- Total Item Quantity of the ** MAP MODS ONLY ** 
+// [map_item_drop_quantity_+%] < "20" && [Rarity] == "Magic" # [RerollMods] == "true" // -- ITEM QUANTITY   -- Total Item Quantity of the ** MAP MODS ONLY ** 
 
 // Ignore unique maps
 [Rarity] == "Unique" # [IgnoreMap] == "true"
