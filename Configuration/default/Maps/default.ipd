@@ -42,6 +42,8 @@
 [Type] == "Thicket" # [IgnoreMap] == "true"
 [Type] == "Vaal Pyramid Map" # [IgnoreMap] == "true"
 [Type] == "Dungeon" # [IgnoreMap] == "true"
+[Type] == "Torture Chamber Map" # [IgnoreMap] == "true" // Bot get stucked on this one, and boss is totally OP anyway..
+[Type] == "Dry Peninsula Map" # [IgnoreMap] == "true"
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
