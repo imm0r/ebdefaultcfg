@@ -341,11 +341,11 @@
 //                                                                                 //
 /////////////////////////////////////////////////////////////////////////////////////
 
-// [Type] == "Glorious Plate" # [ChanceItem] == "true" // Kaom's Heart
-// [Type] == "Hubris Circlet" # [ChanceItem] == "true" // Crown of Eyes
-// [Type] == "Gavel" # [ChanceItem] == "true" // Mjolnir
-// [Type] == "Spine Bow" # [ChanceItem] == "true" // Voltaxic Rift
-// [Type] == "Siege Axe" # [ChanceItem] == "true" // Soul Taker
+// [Type] == "Glorious Plate" # [ChanceItem] == "true" && [Rarity] == "Normal" // Kaom's Heart
+// [Type] == "Hubris Circlet" # [ChanceItem] == "true" && [Rarity] == "Normal" // Crown of Eyes
+// [Type] == "Gavel" # [ChanceItem] == "true" && [Rarity] == "Normal" // Mjolnir
+// [Type] == "Spine Bow" # [ChanceItem] == "true" && [Rarity] == "Normal" // Voltaxic Rift
+// [Type] == "Agate Amulet" # [ChanceItem] == "true" && [Rarity] == "Normal" // Voll's Devotion
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
