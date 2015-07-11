@@ -39,9 +39,9 @@
 
 // Maps where bot gets easily stucked. Better to avoid running them because it could trigger ban. Thanks to report any map that should be added to the list.
 [Type] == "Orchard Map" # [IgnoreMap] == "true"
-[Type] == "Thicket" # [IgnoreMap] == "true"
+[Type] == "Thicket Map" # [IgnoreMap] == "true"
 [Type] == "Vaal Pyramid Map" # [IgnoreMap] == "true"
-[Type] == "Dungeon" # [IgnoreMap] == "true"
+[Type] == "Dungeon Map" # [IgnoreMap] == "true"
 [Type] == "Torture Chamber Map" # [IgnoreMap] == "true" // Bot get stucked on this one, and boss is totally OP anyway..
 [Type] == "Dry Peninsula Map" # [IgnoreMap] == "true"
 

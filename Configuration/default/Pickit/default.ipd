@@ -649,7 +649,7 @@
 [Category] == "Gloves" && [Rarity] == "Rare" # [base_maximum_life] >= "60" && ([Computed Energy Shield] >= "150" || [Computed Evasion] >= "300" || [Computed Armor] >= "300") && [TotalResistances] >= "60" && [StashItem] == "true"
 
 // Dual Leech Life 1Resist
-[Category] == "Gloves" && [Rarity] == "Rare" # [base_maximum_life] >= "70" && [life_leech_from_physical_damage_%] == "2" && [mana_leech_from_physical_damage_%] == "2" && ([base_chaos_damage_resistance_%] >= "20" || [base_cold_damage_resistance_%] >= "30" || [base_fire_damage_resistance_%] >= "30" || [base_lightning_damage_resistance_%] >= "30") && [StashItem] == "true"
+[Category] == "Gloves" && [Rarity] == "Rare" # [base_maximum_life] >= "70" && [life_leech_from_physical_damage_permyriad] == "2" && [mana_leech_from_physical_damage_permyriad] == "2" && ([base_chaos_damage_resistance_%] >= "20" || [base_cold_damage_resistance_%] >= "30" || [base_fire_damage_resistance_%] >= "30" || [base_lightning_damage_resistance_%] >= "30") && [StashItem] == "true"
 
 //////////////////////////////////////////////
 //                                          //
@@ -709,13 +709,13 @@
 [Category] == "Ring" && [Rarity] == "Rare" # [TotalResistances] >= "60" && [attack_speed_+%] >= "5" && [base_maximum_life] >= "60" && [StashItem] == "true"
 
 //tri res hp
-[Category] == "Ring" && [Rarity] == "Rare" # [TotalResistances] >= "60" && [base_maximum_life] >= "50" &&  ([mana_leech_from_physical_damage_%] >= "2" || [life_leech_from_physical_damage_%] >= "2") && [StashItem] == "true"
+[Category] == "Ring" && [Rarity] == "Rare" # [TotalResistances] >= "60" && [base_maximum_life] >= "50" &&  ([mana_leech_from_physical_damage_permyriad] >= "2" || [life_leech_from_physical_damage_permyriad] >= "2") && [StashItem] == "true"
  
 //tri res hp WED
 [Category] == "Ring" && [Rarity] == "Rare" # [TotalResistances] >= "60" && [weapon_elemental_damage_+%] >= "25" && [base_maximum_life] >= "60" && [StashItem] == "true"
 
 //Dual Leech + HP
-[Category] == "Ring" && [Rarity] == "Rare" # [life_leech_from_physical_damage_%] == "2" && [mana_leech_from_physical_damage_%] == "2" && [base_maximum_life] >= "50" && [StashItem] == "true"
+[Category] == "Ring" && [Rarity] == "Rare" # [life_leech_from_physical_damage_permyriad] == "2" && [mana_leech_from_physical_damage_permyriad] == "2" && [base_maximum_life] >= "50" && [StashItem] == "true"
 
 // WED + Attack Speed / Cast Speed
 [Category] == "Ring" && [Rarity] == "Rare" # [weapon_elemental_damage_+%] >= "21" && ([base_cast_speed_+%] >= "5" || [attack_speed_+%] >= "5") && [StashItem] == "true"
