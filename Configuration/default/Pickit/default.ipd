@@ -15,7 +15,7 @@
 // You can use a mod by its index (if it is not in the ModsList.txt file) this way [modindex] == "value", ie. [587] == "30" for +30 int mod. Press F7 to dump inventory and find mod indexes.
 // Flags that can be used are : [StashItem] =="true", [SellItem] == "true", [SellUnid] == "true". Please note that [SellItem] tag will ALWAYS make the bot identify item.
 // About Key Rarity, only operators == and != can be used and possible values are: "Normal", "Magic", "Rare", "Unique".
-// You can use different equipment categories as well, possible values: "Chest", "Shield", "Helm", "Ring", "Amulet", "Flask", "Weapon", "1Handed", "2Handed", "Gloves", "Boots", "Belt", "Map".
+// You can use different equipment categories as well, possible values: "Chest", "Shield", "Helm", "Ring", "Amulet", "Flask", "Weapon", "1Handed", "2Handed", "Gloves", "Boots", "Belt", "Map", "Jewel".
 // Operators && and || are available, parenthesis are working.
 // # is used to separate mods checked after item identification. If an item matchs mods before the # and doesn't match the ones after, it will be sold to vendor.
 // If you didn't noticed, // is used for comments.
@@ -85,6 +85,64 @@
 [Type] == "Sacrifice at Noon" # [StashItem] == "true" //Sacrifice map
 [Type] == "Sacrifice at Dusk" # [StashItem] == "true" //Sacrifice map
 [Type] == "Sacrifice at Midnight" # [StashItem] == "true" //Sacrifice map
+
+/////////////////////////////////////////////////////////////////////////////////////
+//                                                                                 //
+//                                 C A R D S                                       //
+//                                                                                 //
+/////////////////////////////////////////////////////////////////////////////////////
+
+[Type] == "Abandoned Wealth" # [StashItem] == "true"
+[Type] == "The Avenger" # [StashItem] == "true"
+[Type] == "The Battle Born" # [StashItem] == "true"
+[Type] == "Birth of the Three" # [StashItem] == "true"
+[Type] == "The Brittle Emperor" # [StashItem] == "true"
+[Type] == "The Carrion Crow" # [StashItem] == "true"
+[Type] == "The Cataclysm" # [StashItem] == "true"
+[Type] == "The Celestial Justicar" # [StashItem] == "true"
+[Type] == "The Chains that Bind" # [StashItem] == "true"
+[Type] == "Chaotic Disposition" # [StashItem] == "true"
+[Type] == "Coveted Possession" # [StashItem] == "true"
+[Type] == "The Dark Mage" # [StashItem] == "true"
+[Type] == "The Doctor" # [StashItem] == "true"
+[Type] == "The Drunken Aristocrat" # [StashItem] == "true"
+[Type] == "Emperor's Luck" # [StashItem] == "true"
+[Type] == "The Explorer" # [StashItem] == "true"
+[Type] == "The Feast" # [StashItem] == "true"
+[Type] == "The Fiend" # [StashItem] == "true"
+[Type] == "The Gambler" # [StashItem] == "true"
+[Type] == "The Gemcutter" # [StashItem] == "true"
+[Type] == "Gemcutter's Promise" # [StashItem] == "true"
+[Type] == "The Gladiator" # [StashItem] == "true"
+[Type] == "The Hermit" # [StashItem] == "true"
+[Type] == "The Hoarder" # [StashItem] == "true"
+[Type] == "Hope" # [StashItem] == "true"
+[Type] == "The Hunger" # [StashItem] == "true"
+[Type] == "Humility" # [StashItem] == "true"
+[Type] == "The Incantation" # [StashItem] == "true"
+[Type] == "The Inventor" # [StashItem] == "true"
+[Type] == "Jack in the Box" # [StashItem] == "true"
+[Type] == "The King's Heart" # [StashItem] == "true"
+[Type] == "Lantador's Lost Love" # [StashItem] == "true"
+[Type] == "The Lover" # [StashItem] == "true"
+[Type] == "Lucky Connections" # [StashItem] == "true"
+[Type] == "The Metalsmith's Gift" # [StashItem] == "true"
+[Type] == "The Pact" # [StashItem] == "true"
+[Type] == "The Poet" # [StashItem] == "true"
+[Type] == "The Queen" # [StashItem] == "true"
+[Type] == "Rain of Chaos" # [StashItem] == "true"
+[Type] == "The Road to Power" # [StashItem] == "true"
+[Type] == "The Scarred Meadow" # [StashItem] == "true"
+[Type] == "The Scholar" # [StashItem] == "true"
+[Type] == "The Summoner" # [StashItem] == "true"
+[Type] == "The Sun" # [StashItem] == "true"
+[Type] == "Three Faces in the Dark" # [StashItem] == "true"
+[Type] == "Time-Lost Relic" # [StashItem] == "true"
+[Type] == "The Union" # [StashItem] == "true"
+[Type] == "Vinia's Token" # [StashItem] == "true"
+[Type] == "The Warden" # [StashItem] == "true"
+[Type] == "The Watcher" # [StashItem] == "true"
+[Type] == "The Wind" # [StashItem] == "true"
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
@@ -355,6 +413,17 @@
  
 [Rarity] == "Unique" # [SellItem] == "true" // Sell all unique that aren't defined in the pickit (be careful with recently added uniques)
  
+//////////////////////////////////////////////
+//                                          //
+//                J E W E L S               //
+//                                          //
+//////////////////////////////////////////////
+
+// [Category] == "Jewel" # [StashItem] == "true" // Stash all jewels
+[Category] == "Jewel" && [Rarity] == "Rare" # [StashItem] == "true" // Stash all rare jewels
+[Category] == "Jewel" && [Rarity] == "Unique" # [StashItem] == "true" // Stash all unique jewels
+ 
+
 //////////////////////////////////////////////
 //                                          //
 //                A m u l e t s             //
