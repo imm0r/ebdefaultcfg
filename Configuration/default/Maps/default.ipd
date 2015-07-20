@@ -40,7 +40,6 @@
 // Maps where bot gets easily stucked. Better to avoid running them because it could trigger ban. Thanks to report any map that should be added to the list.
 [Type] == "Orchard Map" # [IgnoreMap] == "true"
 [Type] == "Tropical Island Map" # [IgnoreMap] == "true"
-[Type] == "Thicket Map" # [IgnoreMap] == "true"
 [Type] == "Vaal Pyramid Map" # [IgnoreMap] == "true"
 [Type] == "Dungeon Map" # [IgnoreMap] == "true"
 [Type] == "Torture Chamber Map" # [IgnoreMap] == "true" // Bot get stucked on this one, and boss is totally OP anyway..
@@ -73,6 +72,12 @@
 // [map_spawn_two_bosses] >= "1" # [IgnoreMap] == "true"
 // [map_spawn_extra_exiles] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // Rogue exile
 // [map_spawn_extra_exiles] > "0" # [IgnoreMap] == "true"
+// [map_base_ground_fire_damage_to_deal_per_minute] > "5000" && [Rarity] == "Magic" # [RerollMods] == "true"
+// [map_base_ground_fire_damage_to_deal_per_minute] > "5000" # [IgnoreMap] == "true"
+// [map_ground_lightning] == "1" && [Rarity] == "Magic" # [RerollMods] == "true"
+// [map_ground_lightning] == "1" # [IgnoreMap] == "true"
+// [map_base_ground_desecration_damage_to_deal_per_minute] > "5000" && [Rarity] == "Magic" # [RerollMods] == "true"
+// [map_base_ground_desecration_damage_to_deal_per_minute] > "5000" # [IgnoreMap] == "true"
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //

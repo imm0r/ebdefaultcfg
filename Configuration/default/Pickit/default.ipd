@@ -405,14 +405,6 @@
 // [Type] == "Spine Bow" # [ChanceItem] == "true" && [Rarity] == "Normal" // Voltaxic Rift
 // [Type] == "Agate Amulet" # [ChanceItem] == "true" && [Rarity] == "Normal" // Voll's Devotion
 
-/////////////////////////////////////////////////////////////////////////////////////
-//                                                                                 //
-//                             U N I Q U E  I T E M S                              //
-//                                                                                 //
-/////////////////////////////////////////////////////////////////////////////////////
- 
-[Rarity] == "Unique" # [SellItem] == "true" // Sell all unique that aren't defined in the pickit (be careful with recently added uniques)
- 
 //////////////////////////////////////////////
 //                                          //
 //                J E W E L S               //
@@ -422,7 +414,14 @@
 // [Category] == "Jewel" # [StashItem] == "true" // Stash all jewels
 [Category] == "Jewel" && [Rarity] == "Rare" # [StashItem] == "true" // Stash all rare jewels
 [Category] == "Jewel" && [Rarity] == "Unique" # [StashItem] == "true" // Stash all unique jewels
+
+/////////////////////////////////////////////////////////////////////////////////////
+//                                                                                 //
+//                             U N I Q U E  I T E M S                              //
+//                                                                                 //
+/////////////////////////////////////////////////////////////////////////////////////
  
+[Rarity] == "Unique" # [SellItem] == "true" // Sell all unique that aren't defined in the pickit (be careful with recently added uniques)
 
 //////////////////////////////////////////////
 //                                          //
