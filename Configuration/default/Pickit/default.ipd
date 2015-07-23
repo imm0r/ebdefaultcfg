@@ -207,7 +207,7 @@
 //[Type] == "Melee Splash" // Gem
 //[Type] == "Multistrike" // Gem
 //[Type] == "Ranged Attack Totem" // Gem
-//[Type] == "Reduced Duration" // Gem
+//[Type] == "Less Duration" // Gem
 //[Type] == "Reduced Mana" // Gem
 //[Type] == "Spell Totem" // Gem
 //[Type] == "Stun" // Gem
