@@ -44,6 +44,7 @@
 [Type] == "Dungeon Map" # [IgnoreMap] == "true"
 [Type] == "Torture Chamber Map" # [IgnoreMap] == "true" // Bot get stucked on this one, and boss is totally OP anyway..
 [Type] == "Dry Peninsula Map" # [IgnoreMap] == "true"
+[Type] == "Jungle Valley Map" # [IgnoreMap] == "true"
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
