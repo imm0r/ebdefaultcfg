@@ -143,6 +143,19 @@
 [Type] == "The Warden" # [StashItem] == "true"
 [Type] == "The Watcher" # [StashItem] == "true"
 [Type] == "The Wind" # [StashItem] == "true"
+[Type] == "Doedre's Madness" # [StashItem] == "true"
+[Type] == "The Artist" # [StashItem] == "true"
+[Type] == "The Betrayal" # [StashItem] == "true"
+[Type] == "The Encroaching Darkness" # [StashItem] == "true"
+[Type] == "The Flora's Gift" # [StashItem] == "true"
+[Type] == "The King's Blade" # [StashItem] == "true"
+[Type] == "The Last One Standing" # [StashItem] == "true"
+[Type] == "The One With All" # [StashItem] == "true"
+[Type] == "The Pack Leader" # [StashItem] == "true"
+[Type] == "The Siren" # [StashItem] == "true"
+[Type] == "The Spoiled Prince" # [StashItem] == "true"
+[Type] == "The Wrath" # [StashItem] == "true"
+
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
@@ -399,11 +412,11 @@
 //                                                                                 //
 /////////////////////////////////////////////////////////////////////////////////////
 
-// [Type] == "Glorious Plate" # [ChanceItem] == "true" && [Rarity] == "Normal" // Kaom's Heart
-// [Type] == "Hubris Circlet" # [ChanceItem] == "true" && [Rarity] == "Normal" // Crown of Eyes
-// [Type] == "Gavel" # [ChanceItem] == "true" && [Rarity] == "Normal" // Mjolnir
-// [Type] == "Spine Bow" # [ChanceItem] == "true" && [Rarity] == "Normal" // Voltaxic Rift
-// [Type] == "Agate Amulet" # [ChanceItem] == "true" && [Rarity] == "Normal" // Voll's Devotion
+// [Type] == "Glorious Plate" && [Rarity] == "Normal" # [ChanceItem] == "true" // Kaom's Heart
+// [Type] == "Hubris Circlet && [Rarity] == "Normal"" # [ChanceItem] == "true" // Crown of Eyes
+// [Type] == "Gavel" && [Rarity] == "Normal" # [ChanceItem] == "true" // Mjolnir
+// [Type] == "Spine Bow" && [Rarity] == "Normal" # [ChanceItem] == "true" // Voltaxic Rift
+// [Type] == "Agate Amulet" && [Rarity] == "Normal" # [ChanceItem] == "true" // Voll's Devotion
 
 //////////////////////////////////////////////
 //                                          //
