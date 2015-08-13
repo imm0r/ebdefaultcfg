@@ -1,205 +1,205 @@
-// Welcome to the map runner configuration file. Syntax is the same as in Pickit/default.ipd.
-// Keys available: [RunMap], [IgnoreMap], [MapLevel], [UpgradeQuality], [UpgradeToMagic], [UpgradeToRare], [RerollMods].
-// Whenever you use the "less than" symbol (<) for MapLevel, you'll need to add [MapLevel] >= "66" (could be more than 66 but never less). This is to avoid bug, sry about that.
-// Map upgrading will only be made on a map that has been selected by the bot to farm.
-// All the map mods can be found in ModsList.html file.
-
-// Example: Run rare maps level less than 69
-// [MapLevel] >= "66" && [MapLevel] < "69" && [Rarity] == "Rare" # [RunMap] == "true"
-
-/////////////////////////////////////////////////////////////////////////////////////
-//                                                                                 //
-//                            GENERAL SETTINGS                                     //
-//                                                                                 //
-/////////////////////////////////////////////////////////////////////////////////////
-
-// Run any map between level 68 and 71
-[MapLevel] >= "68" && [MapLevel] < "71" # [RunMap] == "true"
-
-// If you want to enable automatic quality upgrading
-// [MapLevel] >= "72" && [Quality] <= "16" && [Rarity] == "Normal" # [UpgradeQuality] == "true"
-
-// If you want to transmut or alch maps before running them. Be careful UpgradeToMagic and UpgradeToRare aren't compatible.
-// [Rarity] == "Normal" # [UpgradeToMagic] == "true"
-// [Rarity] == "Normal" # [UpgradeToRare] == "true"
-
-// Use this to roll for a specific amount of Item Quantity **(DOES NOT INCLUDE QUANTITY FROM QUALITY)**
-// [map_item_drop_quantity_+%] < "20" && [Rarity] == "Magic" # [RerollMods] == "true" // -- ITEM QUANTITY   -- Total Item Quantity of the ** MAP MODS ONLY ** 
-
-// Ignore unique maps
-[Rarity] == "Unique" # [IgnoreMap] == "true"
-
-// If you wanna run Sacrifices, just uncomment following lines. Don't forget tu comment first General Settings line ([MapLevel] >= "68" && [MapLevel] < "71" # [RunMap] == "true")
-// to be sure that bot will run only Sacrifices.
-
-// [Type] == "Sacrifice at Dusk" # [RunMap] == "true"
-// [Type] == "Sacrifice at Dawn" # [RunMap] == "true"
-// [Type] == "Sacrifice at Noon" # [RunMap] == "true"
-// [Type] == "Sacrifice at Midnight" # [RunMap] == "true"
-
-// Maps where bot gets easily stucked. Better to avoid running them because it could trigger ban. Thanks to report any map that should be added to the list.
-[Type] == "Orchard Map" # [IgnoreMap] == "true"
-[Type] == "Tropical Island Map" # [IgnoreMap] == "true"
-[Type] == "Vaal Pyramid Map" # [IgnoreMap] == "true"
-[Type] == "Dungeon Map" # [IgnoreMap] == "true"
-[Type] == "Torture Chamber Map" # [IgnoreMap] == "true" // Bot get stucked on this one, and boss is totally OP anyway..
-[Type] == "Dry Peninsula Map" # [IgnoreMap] == "true"
-[Type] == "Jungle Valley Map" # [IgnoreMap] == "true"
-[Type] == "Arena Map" # [IgnoreMap] == "true"
-[Type] == "Pit Map" # [IgnoreMap] == "true"
-
-/////////////////////////////////////////////////////////////////////////////////////
-//                                                                                 //
-//                              NASTY MODS                                         //
-//                                                                                 //
-/////////////////////////////////////////////////////////////////////////////////////
-
-// If you want to reroll map in case of bad mods detected (thanks to immo, zeMagic and the community for the list)
-// [map_monsters_reflect_%_physical_damage] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true"
-// [map_monsters_reflect_%_physical_damage] >= "1" # [IgnoreMap] == "true"
-// [map_monsters_reflect_%_elemental_damage] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true"
-// [map_monsters_reflect_%_elemental_damage] >= "1" # [IgnoreMap] == "true"
-[map_player_has_blood_magic_keystone] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true"
-[map_player_has_blood_magic_keystone] >= "1" # [IgnoreMap] == "true"
-// [map_player_status_recovery_speed_+%] < "0" && [Rarity] == "Magic" # [RerollMods] == "true" // Life, mana and  es recovery 50% slower
-// [map_player_status_recovery_speed_+%] < "0" # [IgnoreMap] == "true"
-// [no_mana_regeneration] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // No mana regen
-// [no_mana_regeneration] >= "1" # [IgnoreMap] == "true"
-// [no_life_regeneration] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // No life regen
-// [no_life_regeneration] >= "1" # [IgnoreMap] == "true"
-// [map_player_no_regeneration] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // No life / mana regen
-// [map_player_no_regeneration] >= "1" # [IgnoreMap] == "true"
-// [map_player_has_level_X_temporal_chains] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true"
-// [map_player_has_level_X_temporal_chains] >= "1" # [IgnoreMap] == "true"
-// [map_spawn_two_bosses] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true"
-// [map_spawn_two_bosses] >= "1" # [IgnoreMap] == "true"
-// [map_spawn_extra_exiles] > "0" && [Rarity] == "Magic" # [RerollMods] == "true" // Rogue exile
-// [map_spawn_extra_exiles] > "0" # [IgnoreMap] == "true"
-// [map_base_ground_fire_damage_to_deal_per_minute] > "5000" && [Rarity] == "Magic" # [RerollMods] == "true"
-// [map_base_ground_fire_damage_to_deal_per_minute] > "5000" # [IgnoreMap] == "true"
-// [map_ground_lightning] == "1" && [Rarity] == "Magic" # [RerollMods] == "true"
-// [map_ground_lightning] == "1" # [IgnoreMap] == "true"
-// [map_base_ground_desecration_damage_to_deal_per_minute] > "5000" && [Rarity] == "Magic" # [RerollMods] == "true"
-// [map_base_ground_desecration_damage_to_deal_per_minute] > "5000" # [IgnoreMap] == "true"
-
-/////////////////////////////////////////////////////////////////////////////////////
-//                                                                                 //
-//                              NASTY MAPS                                         //
-//                                                                                 //
-/////////////////////////////////////////////////////////////////////////////////////
-
-// Thanks to DiciannoveGaming, immo, ExVault, the community
-
-// SPELL BLOCK NEEDED
-// [Type] == "Temple Map" # [IgnoreMap] == "true" //remove if your build has spell block.
-// [Type] == "Crematorium Map" # [IgnoreMap] == "true" //remove if your build has spell block.
-// [Type] == "Shipyard Map" # [IgnoreMap] == "true" //remove if your build has spell block.
-// [Type] == "Courtyard Map" # [IgnoreMap] == "true" //remove if your build has spell block.
-
-// INFERNAL BLOW NEEDED
-// [Type] == "Labyrinth Map" # [IgnoreMap] == "true" //remove if your build is infernal blow.
-
-// MOM + ARCTIC ARMOUR to survive
-// [Type] == "Jungle Valley Map" # [IgnoreMap] == "true"// endless stream of small spiders, takes forever to kill.
-
-//RETARD BOSS
-// [Type] == "Residence Map" # [IgnoreMap] == "true"
-// [Type] == "Palace Map" # [IgnoreMap] == "true"
-// [Type] == "Maze Map" # [IgnoreMap] == "true"
-
-/////////////////////////////////////////////////////////////////////////////////////
-//                                                                                 //
-//                              MAPS TO IGNORE                                     //
-//                                                                                 //
-/////////////////////////////////////////////////////////////////////////////////////
-
-// Maps to ignore based on rarity. If you want to run specific Unique maps then comment the Uniques here, and uncomment the specific ones you want to run at the bottom.
-
-// [Rarity] == "Rare" # [IgnoreMap] == "true"
-// [Rarity] == "Magic" # [IgnoreMap] == "true"
-// [Rarity] == "Normal" # [IgnoreMap] == "true"
+// available MapLevel:
+[MapLevel] == "66"		// Lowest available MapLevel	[pre v2.0.0 maps only]
+[MapLevel] == "68"		// Lowest available MapLevel
+[MapLevel] == "82"		// Highest available MapLevel
 
 
-// Maps to ignore by name (Thanks to Omega for this list)
+// available rarities:
+[Rarity] == "Normal"	// Possible amount of affixes: 0
+[Rarity] == "Magic"		// Possible amount of affixes: 2
+[Rarity] == "Rare"		// Possible amount of affixes: 6 (non vaal orb'ed)
+[Rarity] == "Unique"	// Possible amount of affixes: varies
 
 
-// [Type] == "Crypt Map" # [IgnoreMap] == "true"
-// [Type] == "Dried Lake Map" # [IgnoreMap] == "true"
-// [Type] == "Dunes Map" # [IgnoreMap] == "true"
-// [Type] == "Dungeon Map" # [IgnoreMap] == "true"
-// [Type] == "Grotto Map" # [IgnoreMap] == "true"
-// [Type] == "Orchard Map" # [IgnoreMap] == "true"
-// [Type] == "Overgrown Ruin Map" # [IgnoreMap] == "true"
-// [Type] == "Tropical Island Map" # [IgnoreMap] == "true"
-// [Type] == "Untainted Map" # [IgnoreMap] == "true"
-// [Type] == "Arcade Map" # [IgnoreMap] == "true"
-// [Type] == "Arsenal Map" # [IgnoreMap] == "true"
-// [Type] == "Cemetery Map" # [IgnoreMap] == "true"
-// [Type] == "Mountain Ledge Map" # [IgnoreMap] == "true"
-// [Type] == "Sewer Map" # [IgnoreMap] == "true"
-// [Type] == "Thicket Map" # [IgnoreMap] == "true"
-// [Type] == "Wharf Map" # [IgnoreMap] == "true"
-// [Type] == "Ghetto Map" # [IgnoreMap] == "true"
-// [Type] == "Mud Geyser Map" # [IgnoreMap] == "true"
-// [Type] == "Museum Map" # [IgnoreMap] == "true"
-// [Type] == "Reef Map" # [IgnoreMap] == "true"
-// [Type] == "Spider Lair Map" # [IgnoreMap] == "true"
-// [Type] == "Springs Map" # [IgnoreMap] == "true"
-// [Type] == "Vaal Pyramid Map" # [IgnoreMap] == "true"
-// [Type] == "Catacomb Map" # [IgnoreMap] == "true"
-// [Type] == "Overgrown Shrine Map" # [IgnoreMap] == "true"
-// [Type] == "Promenade Map" # [IgnoreMap] == "true"
-// [Type] == "Shore Map" # [IgnoreMap] == "true"
-// [Type] == "Spider Forest Map" # [IgnoreMap] == "true"
-// [Type] == "Tunnel Map" # [IgnoreMap] == "true"
-// [Type] == "Bog Map" # [IgnoreMap] == "true"
-// [Type] == "Coves Map" # [IgnoreMap] == "true"
-// [Type] == "Graveyard Map" # [IgnoreMap] == "true"
-// [Type] == "Pier Map" # [IgnoreMap] == "true"
-// [Type] == "Underground Sea Map" # [IgnoreMap] == "true"
-// [Type] == "Villa Map" # [IgnoreMap] == "true"
-// [Type] == "Arachnid Nest Map" # [IgnoreMap] == "true"
-// [Type] == "Colonnade Map" # [IgnoreMap] == "true"
-// [Type] == "Dry Woods Map" # [IgnoreMap] == "true"
-// [Type] == "Strand Map" # [IgnoreMap] == "true"
-// [Type] == "Temple Map" # [IgnoreMap] == "true"
-// [Type] == "Jungle Valley Map" # [IgnoreMap] == "true"
-// [Type] == "Labyrinth Map" # [IgnoreMap] == "true"
-// [Type] == "Mine Map" # [IgnoreMap] == "true"
-
-// [Type] == "Torture Chamber Map" # [IgnoreMap] == "true"
-// [Type] == "Waste Pool Map" # [IgnoreMap] == "true"
-// [Type] == "Canyon Map" # [IgnoreMap] == "true"
-// [Type] == "Cells Map" # [IgnoreMap] == "true"
-// [Type] == "Dark Forest Map" # [IgnoreMap] == "true"
-// [Type] == "Dry Peninsula Map" # [IgnoreMap] == "true"
-// [Type] == "Gorge Map" # [IgnoreMap] == "true"
-// [Type] == "Maze Map" # [IgnoreMap] == "true"
-// [Type] == "Residence Map" # [IgnoreMap] == "true"
-// [Type] == "Underground River Map" # [IgnoreMap] == "true"
-// [Type] == "Bazaar Map" # [IgnoreMap] == "true"
-// [Type] == "Necropolis Map" # [IgnoreMap] == "true"
-// [Type] == "Plateau Map" # [IgnoreMap] == "true"
-// [Type] == "Academy Map" # [IgnoreMap] == "true"
-// [Type] == "Crematorium Map" # [IgnoreMap] == "true"
-// [Type] == "Precinct Map" # [IgnoreMap] == "true"
-// [Type] == "Shipyard Map" # [IgnoreMap] == "true"
-// [Type] == "Shrine Map" # [IgnoreMap] == "true"
-// [Type] == "Courtyard Map" # [IgnoreMap] == "true"
-// [Type] == "Palace Map" # [IgnoreMap] == "true"
-// [Type] == "Vaal Temple Map" # [IgnoreMap] == "true"
+// MapUpgrading Options:
+[Rarity] == "Normal" # [UpgradeToMagic] == "true"	// Uses Orb of Transmutation
+[Rarity] == "Normal" # [UpgradeToRare] == "true"	// Uses Orb of Alchemy
 
 
-// Unique Maps by Name
+// Upgrading a maps quality:
+[Quality] < "20"	 				              # [UpgradeQuality] == "true"  // Uses Cartographer's Chisel on maps below 20(max) Quality.
+[Quality] < "16" && [Rarity] != "Rare"	# [UpgradeQuality] == "true"	// Never use a Cartographer's Chisel on maps below 16 Quality.
 
 
-// [Type] == "Crypt Map" && [Rarity] == "Unique" # [IgnoreMap] == "true" // The Coward's Trial
-// [Type] == "Mountain Ledge Map" && [Rarity] == "Unique" # [IgnoreMap] == "true" // Maelström of Chaos
-// [Type] == "Reef Map" && [Rarity] == "Unique" # [IgnoreMap] == "true" // Mao Kun
-// [Type] == "Vaal Pyramid Map" && [Rarity] == "Unique" # [IgnoreMap] == "true" // Vaults of Atziri
-// [Type] == "Overgrown Shrine Map" && [Rarity] == "Unique" # [IgnoreMap] == "true" // Acton's Nightmare
-// [Type] == "Temple Map" && [Rarity] == "Unique" # [IgnoreMap] == "true" // Poorjoy's Asylum
-// [Type] == "Torture Chamber Map" && [Rarity] == "Unique" # [IgnoreMap] == "true" // Oba's Cursed Trove
-// [Type] == "Strand Map" && [Rarity] == "Unique" # [IgnoreMap] == "true" // Whakawairua Tuahu
-// [Type] == "Maze Map" && [Rarity] == "Unique" # [IgnoreMap] == "true" // Olmec's Sanctum
-// [Type] == "Necropolis Map" && [Rarity] == "Unique" # [IgnoreMap] == "true" // Death and TaxesS
+// Magic-Find options:
+[1045] < "10"		// PACK SIZE	  	(Total Pack Size of the ** MAP MODS ONLY **		[Value : 0% - 15%])
+[1060] < "30"		// ITEM QUANTITY	(Total Item Quantity of the ** MAP MODS ONLY **	[Value : 0% - 50%])
+[1264] < "10"		// ITEM RARITY		(Total Item Rarity of the ** MAP MODS ONLY **	[Value : 0% - 25%])
+
+
+// Available Prefixes (normal: 1|magic: 3):
+[1003] > "0"					          	// Twinned					 			(Area contains two Unique Bosses)
+[1004] > "0"					          	// Overlord's				 			(Unique Boss Deals +X% Damage)
+[1005] > "0"					          	// Overlord's				 			(Unique Boss Attacks X% Faster)
+[1006] > "0"					          	// Incombustible			 		(+X% Monster Fire Resistance)
+[1007] > "0"					          	// Molten				  	 			(+X% Monster Cold Resistance)
+[1008] > "0"					          	// Grounded					 			(+X% Monster Lightning Resistance)
+[1009] > "0"					          	// Armoured				 				(X% Monster Physical Resistance)
+[1010] > "0"					          	// Unwavering			 				(Monsters cannot be Stunned)
+[1011] > "00"					          	// Unwavering				 			(X% increased Monster Life)
+[1012] >= "25" && [1012] <= "35"	// Savage				  	 			(X% increased Monster Damage)
+[1013] >= "25" && [1013] <= "35"	// Fleet				  	 			(X% increased Monster Movement Speed)
+[1014] >= "25" && [1014] <= "35"	// Fleet				  	 			(X% increased Monster Attack Speed)
+[1015] >= "25" && [1015] <= "35"	// Fleet				  	 			(X% increased Monster Cast Speed)
+[1016] > "0"					          	// Punishing				 			(Monsters reflect X% of Physical Damage)
+[1017] > "0"					          	// Mirrored					 			(Monsters reflect X% of Elemental Damage)
+[1018] >= "2" && [1018] <= "4"		// Splitting				 			(Monsters fire x additional Projectiles)
+[1038] > "0"					          	// Ceremonial				 			(Area Contains Many Totems)
+[1040] > "0"					          	// Skeletal					 			(Area is inhabited by Skeletons)
+[1041] > "0"					          	// Capricious				 			(Area is inhabited by Goatmen)
+[1042] > "0"					          	// Slithering				 			(Area is inhabited by Sea Witches and their Spawn)
+[1043] > "0"					          	// Undead				  	 			(Area is inhabited by Undead)
+[1044] > "0"					          	// Emanant				 				(Area is inhabited by Ranged Monsters)
+[1053] >= "80" && [1053] <= "100"	// Burning				 				(Monsters deal X% extra Damage as Fire)
+[1054] >= "80" && [1054] <= "100"	// Freezing					 			(Monsters deal X% extra Damage as Cold)
+[1055] >= "80" && [1055] <= "100"	// Shocking				 				(Monsters deal X% extra Damage as Lightning)
+[1059] > "0"					          	// Multifarious			 			(Area has increased monster variety)
+[1319] > "0"					          	// Chaining				 				(Monsters' Skills Chain X additional times)
+[1920] > "0"					          	// Antagonist's		 				(Rare Monsters Each have a Nemesis Mod)
+[2073] > "0"					          	// Hexproof					 			(Monsters are Immune to Curses)
+[2074] > "0"					          	// Feral				  	 			(Area is inhabited by Animals)
+[2075] > "0"					          	// Demonic					 			(Area is inhabited by Demons)
+[2076] > "0"					          	// Bipedal					 			(Area is inhabited by Humanoids)
+[2301] > "0"						          // Anarchic					 			(Area is inhabited by X additional Rogue Exiles)
+[1702] > "0" 						          // Anarchic					 			(Area is inhabited by X additional Rogue Exiles)
+[2591] > "0"					            // Otherworldly			 			(Slaying Enemies close together can attract monsters from Beyond.)
+[3350] >= "25" && [3350] <= "35"	// Titan's					 			(Unique Boss has X% Increased Life)
+[3351] >= "20" && [3351] <= "30"	// Titan's					 			(Unique Boss has X% Increased Area of Effect)
+
+// Missing Prefix:
+[xxxx] >= "25" && [xxxx] <= "35"	// Fecund				  		 		(x% increased Monster Life)
+
+
+// Available Suffixes (normal: 1|magic: 3):
+[1019] > "0"					          	// of Vulnerability		 		(Players are cursed with Vulnerability)
+[1020] > "0"					          	// of Enfeeblement		 		(Players are cursed with Enfeeble)
+[1021] > "0"					          	// of Elemental Weakness	(Players are cursed with Elemental Weakness)
+[1022] > "0"					          	// of Temporal Chains	 		(Players are cursed with Temporal Chains)
+[1023] > "0"					          	// of Stasis			       	(Players cannot regenerate Life or Mana)
+[1028] > "0"					          	// of Hemomancy				    (Player has Keystone Blood Magic)
+[1029] > "0"						          // of Balance			      	(Player has Keystone Elemental Equilibrium)
+[1031] >= "8" && [1031] <= "16"		// of Exposure				    (-X% maximum Player Resistances)
+[1032] >= "20" && [1032] <= "50"	// of Smothering			    (Players recover Life, Mana and Energy Shield X% slower)
+[1046] > "0"				          		// HYBRID: of BLOODLINES	(X% more Magic Monsters)
+[1047] > "0"				          		// HYBRID: ANTAGONIST'S		(X% more Rare Monsters)
+[1049] > "0"					          	// of Flames				 	 	 	(Area has patches of burning ground)
+[1058] >= "1" && [2080] <= "3"		// of Frenzy				 	 	 	(Monsters gain X Frenzy Charges every 20 seconds)
+[1064] > "0"					          	// of Ice 				 	 	 		(Area has patches of chilled ground)
+[2052] > "0"					          	// of Lightning						(Area has patches of shocking ground)
+[2079] >= "1" && [2080] <= "3"		// of Power 				 	 	 	(Monsters gain X Power Charges every 20 seconds)
+[2080] >= "1" && [2080] <= "3"		// of Endurance						(Monsters gain X Endurance Charges every 20 seconds)
+[2141] > "0"					          	// of Fracturing					(Monsters Fracture)
+[2369] > "0"						          // of Desecration					(Area has patches of desecrated ground)
+[2371] > "0"					          	// of Venom				 	 	 		(Monsters Poison on Hit)
+[2559] >= "20" && [2559] <= "50"	// of Bloodlines					(Magic Monster Packs each have a Bloodline Mod)
+[3341] >= "20" && [2559] <= "40"	// of Giants				 	 	 	(Monsters Have X% Increased Area of Effect)
+[3345] >= "40" && [2559] <= "100"	// of Insulation					(Monsters Have X% Chance to Avoid Elemental Status Ailments)
+[3346] >= "160"	&& [3346] <= "400"// of Deadliness					(Monsters Have X% Increased Critical Strike Chance)
+[3347] >= "25" && [3350] <= "35"	// of Deadliness					(Monsters Have X% Increased Critical Strike Multiplier)
+
+
+// MapsList by name (Amount: 82):
+[Type] == "Crypt Map"			      	&& [MapLevel] == "68"		// ( http://pathofexile.gamepedia.com/Crypt_Map )
+[Type] == "Desert Map"		    		&& [MapLevel] == "68"		// ( http://pathofexile.gamepedia.com/Desert_Map )
+[Type] == "Dunes Map"			      	&& [MapLevel] == "68"		// ( http://pathofexile.gamepedia.com/Dunes_Map )
+[Type] == "Dungeon Map"			    	&& [MapLevel] == "68"		// ( http://pathofexile.gamepedia.com/Dungeon_Map )
+[Type] == "Grotto Map"			    	&& [MapLevel] == "68"		// ( http://pathofexile.gamepedia.com/Grotto_Map )
+[Type] == "Pit Map"					      && [MapLevel] == "68"		// ( http://pathofexile.gamepedia.com/Pit_Map )
+[Type] == "Tropical Island Map"   && [MapLevel] == "68"		// ( http://pathofexile.gamepedia.com/Tropical_Island_Map )
+[Type] == "Arcade Map"            && [MapLevel] == "69"		// ( http://pathofexile.gamepedia.com/Arcade_Map )
+[Type] == "Cemetery Map"		    	&& [MapLevel] == "69"		// ( http://pathofexile.gamepedia.com/Cemetery_Map )
+[Type] == "Channel Map"			    	&& [MapLevel] == "69"		// ( http://pathofexile.gamepedia.com/Channel_Map )
+[Type] == "Mountain Ledge Map"		&& [MapLevel] == "69"		// ( http://pathofexile.gamepedia.com/Mountain_Ledge_Map )
+[Type] == "Sewer Map"		      		&& [MapLevel] == "69"		// ( http://pathofexile.gamepedia.com/Sewer_Map )
+[Type] == "Thicket Map"		    		&& [MapLevel] == "69"		// ( http://pathofexile.gamepedia.com/Thicket_Map )
+[Type] == "Wharf Map"			      	&& [MapLevel] == "69"		// ( http://pathofexile.gamepedia.com/Wharf_Map )
+[Type] == "Ghetto Map"		    		&& [MapLevel] == "70"		// ( http://pathofexile.gamepedia.com/Ghetto_Map )
+[Type] == "Mud Geyser Map"		  	&& [MapLevel] == "70"		// ( http://pathofexile.gamepedia.com/Mud_Geyser_Map )
+[Type] == "Museum Map"		    		&& [MapLevel] == "70"		// ( http://pathofexile.gamepedia.com/Museum_Map )
+[Type] == "Quarry Map"			    	&& [MapLevel] == "70"		// ( http://pathofexile.gamepedia.com/Quarry_Map )
+[Type] == "Reef Map"			      	&& [MapLevel] == "70"		// ( http://pathofexile.gamepedia.com/Reef_Map )
+[Type] == "Spider Lair Map"		  	&& [MapLevel] == "70"		// ( http://pathofexile.gamepedia.com/Spider_Lair_Map )
+[Type] == "Vaal Pyramid Map"	  	&& [MapLevel] == "70"		// ( http://pathofexile.gamepedia.com/Vaal_Pyramid_Map )
+[Type] == "Arena Map"			      	&& [MapLevel] == "71"		// ( http://pathofexile.gamepedia.com/Arena_Map )
+[Type] == "Overgrown Shrine Map"	&& [MapLevel] == "71"		// ( http://pathofexile.gamepedia.com/Overgrown_Shrine_Map )
+[Type] == "Promenade Map"		    	&& [MapLevel] == "71"		// ( http://pathofexile.gamepedia.com/Promenade_Map )
+[Type] == "Phantasmagoria Map"		&& [MapLevel] == "71"		// ( http://pathofexile.gamepedia.com/Phantasmagoria_Map )
+[Type] == "Shore Map"			      	&& [MapLevel] == "71"		// ( http://pathofexile.gamepedia.com/Shore_Map )
+[Type] == "Spider Forest Map"	  	&& [MapLevel] == "71"		// ( http://pathofexile.gamepedia.com/Spider_Forest_Map )
+[Type] == "Tunnel Map"			    	&& [MapLevel] == "71"		// ( http://pathofexile.gamepedia.com/Tunnel_Map )
+[Type] == "Bog Map"				      	&& [MapLevel] == "72"		// ( http://pathofexile.gamepedia.com/Bog_Map )
+[Type] == "Coves Map"			      	&& [MapLevel] == "72"		// ( http://pathofexile.gamepedia.com/Coves_Map )
+[Type] == "Graveyard Map"		    	&& [MapLevel] == "72"		// ( http://pathofexile.gamepedia.com/Graveyard_Map )
+[Type] == "Pier Map"			      	&& [MapLevel] == "72"		// ( http://pathofexile.gamepedia.com/Pier_Map )
+[Type] == "Underground Sea Map"		&& [MapLevel] == "72"		// ( http://pathofexile.gamepedia.com/Underground_Sea_Map )
+[Type] == "Villa Map"			      	&& [MapLevel] == "72"		// ( http://pathofexile.gamepedia.com/Villa_Map )
+[Type] == "Arachnid Nest Map"		  && [MapLevel] == "73"		// ( http://pathofexile.gamepedia.com/Arachnid_Nest_Map )
+[Type] == "Catacomb Map"		    	&& [MapLevel] == "73"		// ( http://pathofexile.gamepedia.com/Catacomb_Map )
+[Type] == "Colonnade Map"			    && [MapLevel] == "73"		// ( http://pathofexile.gamepedia.com/Colonnade_Map )
+[Type] == "Dry Woods Map"			    && [MapLevel] == "73"		// ( http://pathofexile.gamepedia.com/Temple_Map )
+[Type] == "Strand Map"			    	&& [MapLevel] == "73"		// ( http://pathofexile.gamepedia.com/Strand_Map )
+[Type] == "Temple Map"			    	&& [MapLevel] == "73"		// ( http://pathofexile.gamepedia.com/Temple_Map )
+[Type] == "Jungle Valley Map"	  	&& [MapLevel] == "74"		// ( http://pathofexile.gamepedia.com/Jungle_Valley_Map )
+[Type] == "Labyrinth Map"		    	&& [MapLevel] == "74"		// ( http://pathofexile.gamepedia.com/Labyrinth_Map )
+[Type] == "Mine Map"			      	&& [MapLevel] == "74"		// ( http://pathofexile.gamepedia.com/Mine_Map )
+[Type] == "Torture Chamber Map"		&& [MapLevel] == "74"		// ( http://pathofexile.gamepedia.com/Torture_Chamber_Map )
+[Type] == "Waste Pool Map"		  	&& [MapLevel] == "74"		// ( http://pathofexile.gamepedia.com/Waste_Pool_Map )
+[Type] == "Canyon Map"			    	&& [MapLevel] == "75"		// ( http://pathofexile.gamepedia.com/Canyon_Map )
+[Type] == "Cells Map"				      && [MapLevel] == "75"		// ( http://pathofexile.gamepedia.com/Cells_Map )
+[Type] == "Dark Forest Map"		  	&& [MapLevel] == "75"		// ( http://pathofexile.gamepedia.com/Dark_Forest_Map )
+[Type] == "Dry Peninsula Map"	  	&& [MapLevel] == "75"		// ( http://pathofexile.gamepedia.com/Dry_Peninsula_Map )
+[Type] == "Orchard Map"			    	&& [MapLevel] == "75"		// ( http://pathofexile.gamepedia.com/Orchard_Map )
+[Type] == "Arid Lake Map"			    && [MapLevel] == "76"		// ( http://pathofexile.gamepedia.com/Arid_Lake_Map )
+[Type] == "Gorge Map"				      && [MapLevel] == "76"		// ( http://pathofexile.gamepedia.com/Gorge_Map )
+[Type] == "Malformation Map"	  	&& [MapLevel] == "76"		// ( http://pathofexile.gamepedia.com/Malformation_Map )
+[Type] == "Residence Map"		    	&& [MapLevel] == "76"		// ( http://pathofexile.gamepedia.com/Residence_Map )
+[Type] == "Underground River Map"	&& [MapLevel] == "76"		// ( http://pathofexile.gamepedia.com/Underground_River_Map )
+[Type] == "Bazaar Map"				    && [MapLevel] == "77"		// ( http://pathofexile.gamepedia.com/Bazaar_Map )
+[Type] == "Necropolis Map"		  	&& [MapLevel] == "77"		// ( http://pathofexile.gamepedia.com/Bazaar_Map )
+[Type] == "Plateau Map"			    	&& [MapLevel] == "77"		// ( http://pathofexile.gamepedia.com/Plateau_Map )
+[Type] == "Volcano Map"			    	&& [MapLevel] == "77"		// ( http://pathofexile.gamepedia.com/Volcano_Map )
+[Type] == "Academy Map"				    && [MapLevel] == "78"		// ( http://pathofexile.gamepedia.com/Academy_Map )
+[Type] == "Crematorium Map"		  	&& [MapLevel] == "78"		// ( http://pathofexile.gamepedia.com/Crematorium_Map )
+[Type] == "Precinct Map"		    	&& [MapLevel] == "78"		// ( http://pathofexile.gamepedia.com/Precinct_Map )
+[Type] == "Springs Map"			    	&& [MapLevel] == "78"		// ( http://pathofexile.gamepedia.com/Springs_Map )
+[Type] == "Arsenal Map"			    	&& [MapLevel] == "79"		// ( http://pathofexile.gamepedia.com/Arsenal_Map )
+[Type] == "Overgrown Ruin Map"		&& [MapLevel] == "79"		// ( http://pathofexile.gamepedia.com/Overgrown_Ruin_Map )
+[Type] == "Shipyard Map"		    	&& [MapLevel] == "79"		// ( http://pathofexile.gamepedia.com/Shipyard_Map )
+[Type] == "Village Ruin Map"	  	&& [MapLevel] == "79"		// ( http://pathofexile.gamepedia.com/Village_Ruin_Map )
+[Type] == "Courtyard Map"		    	&& [MapLevel] == "80"		// ( http://pathofexile.gamepedia.com/Courtyard_Map )
+[Type] == "Excavation Map"		  	&& [MapLevel] == "80"		// ( http://pathofexile.gamepedia.com/Excavation_Map )
+[Type] == "Wasteland Map"		    	&& [MapLevel] == "80"		// ( http://pathofexile.gamepedia.com/Wasteland_Map )
+[Type] == "Waterways Map"		    	&& [MapLevel] == "80"		// ( http://pathofexile.gamepedia.com/Waterways_Map )
+[Type] == "Maze Map"			      	&& [MapLevel] == "81"		// ( http://pathofexile.gamepedia.com/Maze_Map )
+[Type] == "Palace Map"		    		&& [MapLevel] == "81"		// ( http://pathofexile.gamepedia.com/Palace_Map )
+[Type] == "Shrine Map"			    	&& [MapLevel] == "81"		// ( http://pathofexile.gamepedia.com/Shrine_Map )
+[Type] == "Vaal Temple Map"	  		&& [MapLevel] == "81"		// ( http://pathofexile.gamepedia.com/Vaal_Temple_Map [Can only be created by corrupting a lvl80 map.])
+[Type] == "Abyss Map"			      	&& [MapLevel] == "82"		// ( http://pathofexile.gamepedia.com/Abyss_Map )
+[Type] == "Colosseum Map"	    		&& [MapLevel] == "82"		// ( http://pathofexile.gamepedia.com/Colosseum_Map )
+[Type] == "Core Map"			       	&& [MapLevel] == "82"		// ( http://pathofexile.gamepedia.com/Core_Map )
+
+
+// Fragments (Amount: 8):
+[Type] == "Sacrifice at Dusk"		  // Opens a random level 66 corrupted area.	( http://pathofexile.gamepedia.com/Sacrifice_at_Dusk )
+[Type] == "Sacrifice at Noon"	  	// Opens a random level 66 corrupted area.	( http://pathofexile.gamepedia.com/Sacrifice_at_Noon )
+[Type] == "Sacrifice at Dawn"	  	// Opens a random level 66 corrupted area.	( http://pathofexile.gamepedia.com/Sacrifice_at_Dawn )
+[Type] == "Sacrifice at Midnight"	// Opens a random level 66 corrupted area.	( http://pathofexile.gamepedia.com/Sacrifice_at_Midnight )
+[Type] == "Mortal Grief"		      // Opens a random level 70 corrupted area.	( http://pathofexile.gamepedia.com/Mortal_Grief )
+[Type] == "Mortal Hope"				    // Opens a random level 70 corrupted area.	( http://pathofexile.gamepedia.com/Mortal_Hope )
+[Type] == "Mortal Ignorance"	  	// Opens a random level 70 corrupted area.	( http://pathofexile.gamepedia.com/Mortal_Ignorance )
+[Type] == "Mortal Rage"				    // Opens a random level 70 corrupted area.	( http://pathofexile.gamepedia.com/Mortal_Rage )
+
+
+// Unique Maps by Name (Amount: 13):
+[Type] == "Tropical Island Map"		&& [MapLevel] == "68"	&& [Rarity] == "Unique" 	// Untainted Paradise		( http://pathofexile.gamepedia.com/Untainted_Paradise )
+[Type] == "Crypt Map"			      	&& [MapLevel] == "68"	&& [Rarity] == "Unique"		// The Coward's Trial		( http://pathofexile.gamepedia.com/The_Coward%27s_Trial )
+[Type] == "Vaal Pyramid Map"	  	&& [MapLevel] == "68"	&& [Rarity] == "Unique"		// Vaults of Atziri			( http://pathofexile.gamepedia.com/Vaults_of_Atziri )
+[Type] == "Mountain Ledge Map"		&& [MapLevel] == "69"	&& [Rarity] == "Unique"		// MaelstrÃ¶m of Chaos		( http://pathofexile.gamepedia.com/Maelstr%C3%B6m_of_Chaos )
+[Type] == "Reef Map"			      	&& [MapLevel] == "70"	&& [Rarity] == "Unique"		// Mao Kun				     	( http://pathofexile.gamepedia.com/Mao_Kun )
+[Type] == "Overgrown Shrine Map"  && [MapLevel] == "71"	&& [Rarity] == "Unique"		// Acton's Nightmare		( http://pathofexile.gamepedia.com/Acton%27s_Nightmare )
+[Type] == "Promenade Map"		    	&& [MapLevel] == "71"	&& [Rarity] == "Unique" 	// Hall of Grandmasters	( http://pathofexile.gamepedia.com/Hall_of_Grandmasters )
+[Type] == "Temple Map"			     	&& [MapLevel] == "73"	&& [Rarity] == "Unique" 	// Poorjoy's Asylum			( http://pathofexile.gamepedia.com/Poorjoy%27s_Asylum )
+[Type] == "Strand Map"			    	&& [MapLevel] == "73"	&& [Rarity] == "Unique" 	// Whakawairua Tuahu		( http://pathofexile.gamepedia.com/Whakawairua_Tuahu )
+[Type] == "Maze Map"			      	&& [MapLevel] == "73"	&& [Rarity] == "Unique" 	// Olmec's Sanctum			( http://pathofexile.gamepedia.com/Olmec%27s_Sanctum )
+[Type] == "Torture Chamber Map"		&& [MapLevel] == "74"	&& [Rarity] == "Unique" 	// Oba's Cursed Trove		( http://pathofexile.gamepedia.com/Oba%27s_Cursed_Trove )
+[Type] == "Necropolis Map"		  	&& [MapLevel] == "77"	&& [Rarity] == "Unique" 	// Death and Taxes			( http://pathofexile.gamepedia.com/Death_and_Taxes )
