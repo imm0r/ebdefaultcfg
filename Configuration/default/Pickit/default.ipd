@@ -155,6 +155,18 @@
 [Type] == "The Siren" # [StashItem] == "true"
 [Type] == "The Spoiled Prince" # [StashItem] == "true"
 [Type] == "The Wrath" # [StashItem] == "true"
+[Type] == "Death" # [StashItem] == "true"
+[Type] == "The Fox" # [StashItem] == "true"
+[Type] == "The Gentleman" # [StashItem] == "true"
+[Type] == "The Mercenary" # [StashItem] == "true"
+[Type] == "The Trial" # [StashItem] == "true"
+[Type] == "Wealth and Power" # [StashItem] == "true"
+[Type] == "The Conduit" # [StashItem] == "true"
+[Type] == "Gift Of The Gemling Queen" # [StashItem] == "true"
+[Type] == "House Of Mirrors" # [StashItem] == "true"
+[Type] == "The Survivalist" # [StashItem] == "true"
+[Type] == "Grave Knowledge" # [StashItem] == "true"
+[Type] == "The Dragon's Heart" # [StashItem] == "true"
 
 
 /////////////////////////////////////////////////////////////////////////////////////
