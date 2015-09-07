@@ -1217,7 +1217,7 @@
 [Category] == "Weapon" && [Rarity] == "Rare" # [local_socketed_gem_level_+] == "1" && [local_socketed_bow_gem_level_+] == "2" && [local_attack_speed_+%] >= "8" && [StashItem] == "true"
 
 // Caster Weapons:(+3Gems (Cold/Fire/Light&Castspeed)
-[Category] == "Weapon" && [Rarity] == "Rare" # [local_socketed_gem_level_+] == "1" && [base_cast_speed_+%] >= "15" && ([local_socketed_cold_gem_level_+] == "2" || [local_socketed_fire_gem_level_+] == "2" || [local_socketed_lightning_gem_level_+] == "2") && [StashItem] == "true"
+[Category] == "Weapon" && [Rarity] == "Rare" # ([local_socketed_cold_gem_level_+] == "2" || [local_socketed_fire_gem_level_+] == "2" || [local_socketed_lightning_gem_level_+] == "2") && [local_socketed_gem_level_+] == "1" && [base_cast_speed_+%] >= "15" && [StashItem] == "true"
 
 // Physical Damage only (very high %) Weapons:(+170%phys)
 [Category] == "Weapon" && [Rarity] == "Rare" # [local_physical_damage_+%] >= "170"
@@ -1235,7 +1235,7 @@
 //////////////////////////////////////////////
 
 // Life Resists Def stat Helm
-[Category] == "Helm" && [Rarity] == "Rare" # [base_maximum_life] >= "60" && ([Computed Armor] >= "500" || [Computed Evasion] >=  "500" || [Computed Energy Shield] >= "200") && [TotalResistances] >= "60" && [StashItem] == "true"
+[Category] == "Helm" && [Rarity] == "Rare" # ([Computed Armor] >= "500" || [Computed Evasion] >=  "500" || [Computed Energy Shield] >= "200") && [base_maximum_life] >= "60" && [TotalResistances] >= "60" && [StashItem] == "true"
 
 // Life Resists Def stat Helm
 [Category] == "Helm" && [Rarity] == "Rare" # [base_maximum_life] >= "70" && [TotalResistances] >= "80" && [StashItem] == "true"
@@ -1251,7 +1251,7 @@
 //////////////////////////////////////////////
  
 // Life Resists Def stat
-[Category] == "Chest" && [Rarity] == "Rare" # [base_maximum_life] >= "60" && ([Computed Energy Shield] >= "400" || [Computed Evasion] >= "1000" || [Computed Armor] >= "1000") && [TotalResistances] >= "60" && [StashItem] == "true"
+[Category] == "Chest" && [Rarity] == "Rare" # ([Computed Energy Shield] >= "400" || [Computed Evasion] >= "1000" || [Computed Armor] >= "1000") && [base_maximum_life] >= "60" && [TotalResistances] >= "60" && [StashItem] == "true"
 
 // Life Resists 1
 [Category] == "Chest" && [Rarity] == "Rare" # [base_maximum_life] >= "70" && [TotalResistances] >= "80" && [StashItem] == "true"
@@ -1260,7 +1260,7 @@
 [Category] == "Chest" && [Rarity] == "Rare" # [base_maximum_life] >= "60" && [TotalResistances] >= "110" && [StashItem] == "true"
 
 // Mid Life, high stat, resist
-[Category] == "Chest" && [Rarity] == "Rare" # [base_maximum_life] >= "50" && ([additional_intelligence] >= "40" || [additional_dexterity] >= "40" || [additional_strength] >= "40") && [TotalResistances] >= "55" && [StashItem] == "true"
+[Category] == "Chest" && [Rarity] == "Rare" # ([additional_intelligence] >= "40" || [additional_dexterity] >= "40" || [additional_strength] >= "40") && [base_maximum_life] >= "50" && [TotalResistances] >= "55" && [StashItem] == "true"
 
 
 //////////////////////////////////////////////
@@ -1273,10 +1273,10 @@
 [Category] == "Gloves" && [Rarity] == "Rare" # [base_maximum_life] >= "50" && [attack_speed_+%] >= "10" && [TotalResistances] >= "60" && [StashItem] == "true"
 
 // Life Attack Speed low Resists Def stat
-[Category] == "Gloves" && [Rarity] == "Rare" # [base_maximum_life] >= "60" && ([Computed Energy Shield] >= "150" || [Computed Evasion] >= "300" || [Computed Armor] >= "300") && [TotalResistances] >= "60" && [StashItem] == "true"
+[Category] == "Gloves" && [Rarity] == "Rare" # ([Computed Energy Shield] >= "150" || [Computed Evasion] >= "300" || [Computed Armor] >= "300") && [TotalResistances] >= "60" && [base_maximum_life] >= "60" && [StashItem] == "true"
 
 // Dual Leech Life 1Resist
-[Category] == "Gloves" && [Rarity] == "Rare" # [base_maximum_life] >= "70" && [life_leech_from_physical_damage_permyriad] == "2" && [mana_leech_from_physical_damage_permyriad] == "2" && ([base_chaos_damage_resistance_%] >= "20" || [base_cold_damage_resistance_%] >= "30" || [base_fire_damage_resistance_%] >= "30" || [base_lightning_damage_resistance_%] >= "30") && [StashItem] == "true"
+[Category] == "Gloves" && [Rarity] == "Rare" # ([base_chaos_damage_resistance_%] >= "20" || [base_cold_damage_resistance_%] >= "30" || [base_fire_damage_resistance_%] >= "30" || [base_lightning_damage_resistance_%] >= "30") && [base_maximum_life] >= "70" && [life_leech_from_physical_damage_permyriad] == "2" && [mana_leech_from_physical_damage_permyriad] == "2" && [StashItem] == "true"
 
 //////////////////////////////////////////////
 //                                          //
@@ -1285,7 +1285,7 @@
 //////////////////////////////////////////////
  
 // Life Resists Def stat Boot
-[Category] == "Boots" && [Rarity] == "Rare" # [base_maximum_life] >= "60" && ([Computed Energy Shield] >= "150" || [Computed Evasion] >= "300" || [Computed Armor] >= "300") && [TotalResistances] >= "60" && [StashItem] == "true"
+[Category] == "Boots" && [Rarity] == "Rare" # ([Computed Energy Shield] >= "150" || [Computed Evasion] >= "300" || [Computed Armor] >= "300") && [TotalResistances] >= "60" && [base_maximum_life] >= "60" && [StashItem] == "true"
 
 // high ES 30MS
 [Category] == "Boots" && [Rarity] == "Rare" # [Computed Energy Shield] >= "180" && [base_movement_velocity_+%] == "30" && [StashItem] == "true"
@@ -1303,7 +1303,7 @@
 //////////////////////////////////////////////
  
 // Shield
-[Category] == "Shield" && [Rarity] == "Rare" # [base_maximum_life] >= "60" && ([Computed Energy Shield] >= "300" || [Computed Evasion] >= "800" || [Computed Armor] >= "900") && [TotalResistances] >= "60" && [StashItem] == "true"
+[Category] == "Shield" && [Rarity] == "Rare" # ([Computed Energy Shield] >= "300" || [Computed Evasion] >= "800" || [Computed Armor] >= "900") && [TotalResistances] >= "60" && [base_maximum_life] >= "60" && [StashItem] == "true"
 
 //////////////////////////////////////////////
 //                                          //  
@@ -1312,13 +1312,13 @@
 //////////////////////////////////////////////
  
 //tri res  hp
-[Category] == "Belt" && [Rarity] == "Rare" # [TotalResistances] >= "90" && ([base_maximum_life] >= "60" || [base_maximum_energy_shield] >= "38") && [StashItem] == "true"
+[Category] == "Belt" && [Rarity] == "Rare" # ([base_maximum_life] >= "60" || [base_maximum_energy_shield] >= "38") && [TotalResistances] >= "90" && [StashItem] == "true"
 
 //tri res hp Weapon Elemental Dmg
-[Category] == "Belt" && [Rarity] == "Rare" # [TotalResistances] >= "60" && ([base_maximum_life] >= "50" ||[base_maximum_energy_shield] >= "32") && [weapon_elemental_damage_+%] >= "25" && [StashItem] == "true"
+[Category] == "Belt" && [Rarity] == "Rare" # ([base_maximum_life] >= "50" ||[base_maximum_energy_shield] >= "32") && [TotalResistances] >= "60" && [weapon_elemental_damage_+%] >= "25" && [StashItem] == "true"
 
 //high tri-res (incl.chaos-res)
-[Category] == "Belt" && [Rarity] == "Rare" # [base_chaos_damage_resistance_%] >= "21" && ([base_cold_damage_resistance_%] >= "30" && [base_fire_damage_resistance_%] >= "30") || ([base_cold_damage_resistance_%] >= "30" && [base_lightning_damage_resistance_%] >= "30") || ([base_fire_damage_resistance_%] >= "30" && [base_lightning_damage_resistance_%] >= "30") && [StashItem] == "true"
+[Category] == "Belt" && [Rarity] == "Rare" # ([base_cold_damage_resistance_%] >= "30" && [base_fire_damage_resistance_%] >= "30") || ([base_cold_damage_resistance_%] >= "30" && [base_lightning_damage_resistance_%] >= "30") || ([base_fire_damage_resistance_%] >= "30" && [base_lightning_damage_resistance_%] >= "30") && [base_chaos_damage_resistance_%] >= "21" && [StashItem] == "true"
 
 //HP ARMOR Weapon Elemental Dmg
 [Category] == "Belt" && [Rarity] == "Rare" # [physical_damage_reduction_rating] >= "350" && [weapon_elemental_damage_+%] >= "25" && [base_maximum_life] >= "60" && [StashItem] == "true"
@@ -1333,10 +1333,10 @@
 [Category] == "Ring" && [Rarity] == "Rare" # [TotalResistances] >= "100" && [base_maximum_life] >= "60" && [StashItem] == "true"
 
 //tri res hp attack speed
-[Category] == "Ring" && [Rarity] == "Rare" # [TotalResistances] >= "60" && ([attack_speed_+%] >= "5" || [cast_speed_+%] >= "5") && [base_maximum_life] >= "60" && [StashItem] == "true"
+[Category] == "Ring" && [Rarity] == "Rare" # ([attack_speed_+%] >= "5" || [cast_speed_+%] >= "5") && [base_maximum_life] >= "60" && [TotalResistances] >= "60" && [StashItem] == "true"
 
 //tri res hp
-[Category] == "Ring" && [Rarity] == "Rare" # [TotalResistances] >= "60" && [base_maximum_life] >= "50" &&  ([mana_leech_from_physical_damage_permyriad] >= "2" || [life_leech_from_physical_damage_permyriad] >= "2") && [StashItem] == "true"
+[Category] == "Ring" && [Rarity] == "Rare" # ([mana_leech_from_physical_damage_permyriad] >= "2" || [life_leech_from_physical_damage_permyriad] >= "2") && [TotalResistances] >= "60" && [base_maximum_life] >= "50" && [StashItem] == "true"
  
 //tri res hp WED
 [Category] == "Ring" && [Rarity] == "Rare" # [TotalResistances] >= "60" && [weapon_elemental_damage_+%] >= "25" && [base_maximum_life] >= "60" && [StashItem] == "true"
@@ -1345,7 +1345,7 @@
 [Category] == "Ring" && [Rarity] == "Rare" # [life_leech_from_physical_damage_permyriad] == "2" && [mana_leech_from_physical_damage_permyriad] == "2" && [base_maximum_life] >= "50" && [StashItem] == "true"
 
 // WED + Attack Speed / Cast Speed
-[Category] == "Ring" && [Rarity] == "Rare" # [TotalResistances] >= "60" && ([attack_speed_+%] >= "5" || [cast_speed_+%] >= "5") && [base_maximum_life] >= "60" && [StashItem] == "true"
+[Category] == "Ring" && [Rarity] == "Rare" # ([attack_speed_+%] >= "5" || [cast_speed_+%] >= "5") && [base_maximum_life] >= "60" && [TotalResistances] >= "60" && [StashItem] == "true"
 // Tri Ele Dmg
 [Category] == "Ring" && [Rarity] == "Rare" # [local_maximum_added_cold_damage] >= "24" && [local_maximum_added_fire_damage] >= "27" && [local_maximum_added_lightning_damage] >= "40" && [StashItem] == "true"
 
@@ -1372,7 +1372,7 @@
 //////////////////////////////////////////////
  
 //crit hp
-[Category] == "Amulet" && [Rarity] == "Rare" # [base_critical_strike_multiplier_+%] >= "30" && [critical_strike_chance_+%] >= "30" && ([base_maximum_life] >= "55" || [base_maximum_energy_shield] >= "38" || [maximum_energy_shield_+%] >= "14" ) && [StashItem] == "true"
+[Category] == "Amulet" && [Rarity] == "Rare" # ([base_maximum_life] >= "55" || [base_maximum_energy_shield] >= "38" || [maximum_energy_shield_+%] >= "14") && [base_critical_strike_multiplier_+%] >= "30" && [critical_strike_chance_+%] >= "30" && [StashItem] == "true"
 [Category] == "Amulet" && [Rarity] == "Rare" # ([base_maximum_life] >= "50" || [base_maximum_energy_shield] >= "38" || [maximum_energy_shield_+%] >= "14") && [base_item_found_rarity_+%] >= "30" && [StashItem] == "true"
 
 //Caster Crit cast and spelldamage
@@ -1395,25 +1395,25 @@
 [Category] == "Quiver" && [Rarity] == "Rare" # [base_maximum_life] >= "80" && [base_critical_strike_multiplier_+%] >= "30" && [critical_strike_chance_+%] >= "30" && [StashItem] == "true"
  
 // life + ias/accuracy/flat/wed/critchance/multi + ias/accuracy/flat/wed/critchance/multi
-[Category] == "Quiver" && [Rarity] == "Rare" # [base_maximum_life] >= "90" && ([attack_speed_+%] >= "9" || [accuracy_rating] >= "300" || [attack_minimum_added_physical_damage] >= "9" || [weapon_elemental_damage_+%] >= "30" || [base_critical_strike_multiplier_+%] >= "30" || [critical_strike_chance_+%] >= "30") && ([attack_speed_+%] >= "9" || [accuracy_rating] >= "300" || [attack_minimum_added_physical_damage] >= "9" || [weapon_elemental_damage_+%] >= "30" || [base_critical_strike_multiplier_+%] >= "30" || [critical_strike_chance_+%] >= "30") && [StashItem] == "true"
+[Category] == "Quiver" && [Rarity] == "Rare" # ([attack_speed_+%] >= "9" || [accuracy_rating] >= "300" || [attack_minimum_added_physical_damage] >= "9" || [weapon_elemental_damage_+%] >= "30" || [base_critical_strike_multiplier_+%] >= "30" || [critical_strike_chance_+%] >= "30") && ([attack_speed_+%] >= "9" || [accuracy_rating] >= "300" || [attack_minimum_added_physical_damage] >= "9" || [weapon_elemental_damage_+%] >= "30" || [base_critical_strike_multiplier_+%] >= "30" || [critical_strike_chance_+%] >= "30") && [base_maximum_life] >= "90" && [StashItem] == "true"
 
 // life + ias/accuracy/flat/wed/critchance/multi + ias/accuracy/flat/wed/critchance/multi + ias/accuracy/flat/wed/critchance/multi
-//[Category] == "Quiver" && [Rarity] == "Rare" # [base_maximum_life] >= "90" && ([attack_speed_+%] >= "9" || [accuracy_rating] >= "300" || [attack_minimum_added_physical_damage] >= "9" || [weapon_elemental_damage_+%] >= "30" || [base_critical_strike_multiplier_+%] >= "30" || [critical_strike_chance_+%] >= "30") && ([attack_speed_+%] >= "9" || [accuracy_rating] >= "300" || [attack_minimum_added_physical_damage] >= "9" || [weapon_elemental_damage_+%] >= "30" || [base_critical_strike_multiplier_+%] >= "30" || [critical_strike_chance_+%] >= "30") && ([attack_speed_+%] >= "9" || [accuracy_rating] >= "300" || [attack_minimum_added_physical_damage] >= "9" || [weapon_elemental_damage_+%] >= "30" || [base_critical_strike_multiplier_+%] >= "30" || [critical_strike_chance_+%] >= "30") && [StashItem] == "true"
+//[Category] == "Quiver" && [Rarity] == "Rare" # ([attack_speed_+%] >= "9" || [accuracy_rating] >= "300" || [attack_minimum_added_physical_damage] >= "9" || [weapon_elemental_damage_+%] >= "30" || [base_critical_strike_multiplier_+%] >= "30" || [critical_strike_chance_+%] >= "30") && ([attack_speed_+%] >= "9" || [accuracy_rating] >= "300" || [attack_minimum_added_physical_damage] >= "9" || [weapon_elemental_damage_+%] >= "30" || [base_critical_strike_multiplier_+%] >= "30" || [critical_strike_chance_+%] >= "30") && ([attack_speed_+%] >= "9" || [accuracy_rating] >= "300" || [attack_minimum_added_physical_damage] >= "9" || [weapon_elemental_damage_+%] >= "30" || [base_critical_strike_multiplier_+%] >= "30" || [critical_strike_chance_+%] >= "30") && [base_maximum_life] >= "90" && [StashItem] == "true"
 
 // Poison/Explosive Arrow Builds
 [Category] == "Quiver" && [Rarity] == "Rare" # [base_maximum_life] >= "90" && [TotalResistances] >= "105"  && [StashItem] == "true"
 [Category] == "Quiver" && [Rarity] == "Rare" # [base_maximum_life] >= "90" && [TotalResistances] >= "85" && [attack_speed_+%] >= "9" && [StashItem] == "true"
 
 // Phys dmg + life + crit + single res
-[Type] == "Heavy Quiver" && [Rarity] == "Rare" # [attack_minimum_added_physical_damage] >= "9" && [base_maximum_life] >= "90" && ([base_critical_strike_multiplier_+%] >= "50" || [critical_strike_chance_+%] >= "30") && [TotalResistances] >= "40" && [StashItem] == "true"
+[Type] == "Heavy Quiver" && [Rarity] == "Rare" # ([base_critical_strike_multiplier_+%] >= "50" || [critical_strike_chance_+%] >= "30") && [attack_minimum_added_physical_damage] >= "9" && [base_maximum_life] >= "90" && [TotalResistances] >= "40" && [StashItem] == "true"
  
 // Phys dmg + life + ias/accuracy + crit + single res
-[Type] == "Heavy Quiver" && [Rarity] == "Rare" # [attack_minimum_added_physical_damage] >= "9" && [base_maximum_life] >= "90" && ([attack_speed_+%] >= "11" || [accuracy_rating] >= "201") && ([base_critical_strike_multiplier_+%] >= "50" || [critical_strike_chance_+%] >= "30") && [TotalResistances] >= "40" && [StashItem] == "true"
+[Type] == "Heavy Quiver" && [Rarity] == "Rare" # ([attack_speed_+%] >= "11" || [accuracy_rating] >= "201") && ([base_critical_strike_multiplier_+%] >= "50" || [critical_strike_chance_+%] >= "30") && [TotalResistances] >= "40" && [attack_minimum_added_physical_damage] >= "9" && [base_maximum_life] >= "90" && [StashItem] == "true"
  
 //Elemental
  
 // Dex + Elemental Damage + crit or life
-[Type] == "Light Quiver" && [Rarity] == "Rare" # [additional_dexterity] >= "32" && [weapon_elemental_damage_+%] >= "20" && ([base_maximum_life] >= "70" || [critical_strike_chance_+%] >= "30") && [StashItem] == "true"
+[Type] == "Light Quiver" && [Rarity] == "Rare" # ([base_maximum_life] >= "70" || [critical_strike_chance_+%] >= "30") && [additional_dexterity] >= "32" && [weapon_elemental_damage_+%] >= "20" && [StashItem] == "true"
  
 // Elemental Damage + Dex + accuracy or life
-[Type] == "Conductive Quiver" && [Rarity] == "Rare" # [weapon_elemental_damage_+%] >= "20" && ([accuracy_rating] >= "200" || [additional_dexterity] >= "30" || [base_maximum_life] >= "70") && [StashItem] == "true"
+[Type] == "Conductive Quiver" && [Rarity] == "Rare" # ([accuracy_rating] >= "200" || [additional_dexterity] >= "30" || [base_maximum_life] >= "70") && [weapon_elemental_damage_+%] >= "20" && [StashItem] == "true"
