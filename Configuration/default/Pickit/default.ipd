@@ -1400,7 +1400,7 @@
 // life + ias/accuracy/flat/wed/critchance/multi + ias/accuracy/flat/wed/critchance/multi + ias/accuracy/flat/wed/critchance/multi
 //[Category] == "Quiver" && [Rarity] == "Rare" # ([attack_speed_+%] >= "9" || [accuracy_rating] >= "300" || [attack_minimum_added_physical_damage] >= "9" || [weapon_elemental_damage_+%] >= "30" || [base_critical_strike_multiplier_+%] >= "30" || [critical_strike_chance_+%] >= "30") && ([attack_speed_+%] >= "9" || [accuracy_rating] >= "300" || [attack_minimum_added_physical_damage] >= "9" || [weapon_elemental_damage_+%] >= "30" || [base_critical_strike_multiplier_+%] >= "30" || [critical_strike_chance_+%] >= "30") && ([attack_speed_+%] >= "9" || [accuracy_rating] >= "300" || [attack_minimum_added_physical_damage] >= "9" || [weapon_elemental_damage_+%] >= "30" || [base_critical_strike_multiplier_+%] >= "30" || [critical_strike_chance_+%] >= "30") && [base_maximum_life] >= "90" && [StashItem] == "true"
 
-// Poison/Explosive Arrow Builds
+// Poison/Explosive Arrow Builds//
 [Category] == "Quiver" && [Rarity] == "Rare" # [base_maximum_life] >= "90" && [TotalResistances] >= "105"  && [StashItem] == "true"
 [Category] == "Quiver" && [Rarity] == "Rare" # [base_maximum_life] >= "90" && [TotalResistances] >= "85" && [attack_speed_+%] >= "9" && [StashItem] == "true"
 
@@ -1410,10 +1410,11 @@
 // Phys dmg + life + ias/accuracy + crit + single res
 [Type] == "Heavy Quiver" && [Rarity] == "Rare" # ([attack_speed_+%] >= "11" || [accuracy_rating] >= "201") && ([base_critical_strike_multiplier_+%] >= "50" || [critical_strike_chance_+%] >= "30") && [TotalResistances] >= "40" && [attack_minimum_added_physical_damage] >= "9" && [base_maximum_life] >= "90" && [StashItem] == "true"
  
-//Elemental
+//Elemental//
  
 // Dex + Elemental Damage + crit or life
 [Type] == "Light Quiver" && [Rarity] == "Rare" # ([base_maximum_life] >= "70" || [critical_strike_chance_+%] >= "30") && [additional_dexterity] >= "32" && [weapon_elemental_damage_+%] >= "20" && [StashItem] == "true"
  
 // Elemental Damage + Dex + accuracy or life
 [Type] == "Conductive Quiver" && [Rarity] == "Rare" # ([accuracy_rating] >= "200" || [additional_dexterity] >= "30" || [base_maximum_life] >= "70") && [weapon_elemental_damage_+%] >= "20" && [StashItem] == "true"
+
