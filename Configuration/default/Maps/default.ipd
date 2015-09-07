@@ -29,7 +29,7 @@
 // Ignore unique maps
 [Rarity] == "Unique" # [IgnoreMap] == "true"
 
-// If you wanna run Sacrifices, just uncomment following lines. Don't forget tu comment first General Settings line ([MapLevel] >= "68" && [MapLevel] < "71" # [RunMap] == "true")
+// If you wanna run Sacrifices, just uncomment following lines. Don't forget to comment first General Settings line ([MapLevel] >= "68" && [MapLevel] < "71" # [RunMap] == "true"),
 // to be sure that bot will run only Sacrifices.
 
 // [Type] == "Sacrifice at Dusk" # [RunMap] == "true"

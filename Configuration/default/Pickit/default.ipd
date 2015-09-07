@@ -41,14 +41,12 @@
 // Exception handling
 // [Category] == "Gloves" && [Rarity] == "Rare" # [attack_speed_+%] >= "10" && [StashItem] == "true"
 // What it means : When the gloves are Identified, if they have an attack speed modifier  above a 10% value, it will stash the item.
-// [Type] == "Short Bow" && [Rarity] == "Unique" && [Quality] >= "10" // Random example 1
-// [Type] == "Faun's Horn" && [Rarity] == "Rare" && [Linked] == "4" # [StashItem] == "true" && [121] == "27" && ([base_fire_damage_resistance_%] >= "25" || [base_lightning_damage_resistance_%] >= 25) // Random example 2
-// [Type] == "Faun's Horn" && [Rarity] == "Rare" && [Linked] == "4" # [121] == "27" && ([base_fire_damage_resistance_%] >= "25" || [base_lightning_damage_resistance_%] >= 25) // Random example 3 (yes even without [StashItem] == "true", bot stashes on match)
-// [Type] == "Occultist's Vestment" && [Rarity] == "Unique" // Random example 4
-// [Type] == "Engraved Wand" # [attack_minimum_added_physical_damage]>="10" && [accuracy_rating_+%]=="100"  // Random example 5
-// [Type] == "Medium Life Flask" // Random example 6
-// [Category] == "Chest" && [Rarity] == "Rare" # [base_maximum_life] >= "80" && [151] >= "20" && [base_cold_damage_resistance_%] >= "25" // Random example 7
-// [Category] == "Helm" && [Rarity] == "Rare" # [StashItem] == "true" && [base_maximum_life] >= "80" && [base_lightning_damage_resistance_%] >= "25" && [base_cold_damage_resistance_%] >= "25" // Random example 8
+// [Type] == "Short Bow" && [Rarity] == "Unique" && [Quality] >= "10"
+// [Type] == "Occultist's Vestment" && [Rarity] == "Unique"
+// [Type] == "Engraved Wand" # [attack_minimum_added_physical_damage]>="10" && [accuracy_rating_+%]=="100" 
+// [Type] == "Medium Life Flask"
+// [Category] == "Chest" && [Rarity] == "Rare" # [base_maximum_life] >= "80" && [base_cold_damage_resistance_%] >= "25"
+// [Category] == "Helm" && [Rarity] == "Rare" # [StashItem] == "true" && [base_maximum_life] >= "80" && [base_lightning_damage_resistance_%] >= "25" && [base_cold_damage_resistance_%] >= "25"
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
