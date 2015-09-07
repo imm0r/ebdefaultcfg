@@ -1302,7 +1302,7 @@
 //                                          //
 //////////////////////////////////////////////
  
-// Shield
+// Shield//
 [Category] == "Shield" && [Rarity] == "Rare" # ([Computed Energy Shield] >= "300" || [Computed Evasion] >= "800" || [Computed Armor] >= "900") && [TotalResistances] >= "60" && [base_maximum_life] >= "60" && [StashItem] == "true"
 
 //////////////////////////////////////////////
@@ -1332,7 +1332,7 @@
 //tri res hp//
 [Category] == "Ring" && [Rarity] == "Rare" # [TotalResistances] >= "100" && [base_maximum_life] >= "60" && [StashItem] == "true"
 
-//tri res hp attack speed
+//tri res hp attack speed//
 [Category] == "Ring" && [Rarity] == "Rare" # ([attack_speed_+%] >= "5" || [cast_speed_+%] >= "5") && [base_maximum_life] >= "60" && [TotalResistances] >= "60" && [StashItem] == "true"
 
 //tri res hp
