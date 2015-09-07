@@ -1329,7 +1329,7 @@
 //                                          //
 //////////////////////////////////////////////
 
-//tri res hp
+//tri res hp//
 [Category] == "Ring" && [Rarity] == "Rare" # [TotalResistances] >= "100" && [base_maximum_life] >= "60" && [StashItem] == "true"
 
 //tri res hp attack speed
