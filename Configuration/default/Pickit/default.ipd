@@ -433,6 +433,19 @@
 [Type] == "Grave Knowledge" # [StashItem] == "true"
 [Type] == "The Dragon's Heart" # [StashItem] == "true"
 
+[Type] == "The Catalyst" # [StashItem] == "true"
+[Type] == "Audacity" # [StashItem] == "true"
+[Type] == "Hunter's Resolve" # [StashItem] == "true"
+[Type] == "Pride Before the Fall" # [StashItem] == "true"
+[Type] == "The Tower" # [StashItem] == "true"
+[Type] == "Lantador's Lost Love" # [StashItem] == "true"
+[Type] == "The Doppelganger" # [StashItem] == "true"
+[Type] == "The Vast" # [StashItem] == "true"
+[Type] == "The Inoculated" # [StashItem] == "true"
+[Type] == "Assassin's Favour" # [StashItem] == "true"
+[Type] == "Loyalty" # [StashItem] == "true"
+[Type] == "Scholar of the Seas" # [StashItem] == "true"
+
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
