@@ -487,6 +487,7 @@
 [Type] == "Shore Map" # [StashItem] == "true"
 [Type] == "Spider Forest Map" # [StashItem] == "true"
 [Type] == "Tunnel Map" # [StashItem] == "true"
+[Type] == "Phantasmagoria Map" # [StashItem] == "true"
 
 // Level 72
 [Type] == "Bog Map" # [StashItem] == "true"
@@ -503,16 +504,16 @@
 [Type] == "Dry Woods Map" # [StashItem] == "true"
 [Type] == "Strand Map" # [StashItem] == "true"
 [Type] == "Temple Map" # [StashItem] == "true"
-[Type] == "Dark Forest Map" # [StashItem] == "true"
 
 // Level 74
 [Type] == "Jungle Valley Map" # [StashItem] == "true"
-[Type] == "Labyrinth Map" # [StashItem] == "true"
+[Type] == "Terrace Map" # [StashItem] == "true"
 [Type] == "Mine Map" # [StashItem] == "true"
 [Type] == "Torture Chamber Map" # [StashItem] == "true"
 [Type] == "Waste Pool Map" # [StashItem] == "true"
 
 // Level 75
+[Type] == "Dark Forest Map" # [StashItem] == "true"
 [Type] == "Canyon Map" # [StashItem] == "true"
 [Type] == "Cells Map" # [StashItem] == "true"
 [Type] == "Dry Peninsula Map" # [StashItem] == "true"
@@ -523,6 +524,7 @@
 [Type] == "Gorge Map" # [StashItem] == "true"
 [Type] == "Residence Map" # [StashItem] == "true"
 [Type] == "Underground River Map" # [StashItem] == "true"
+[Type] == "Malformation Map" # [StashItem] == "true"
 
 // Level 77
 [Type] == "Bazaar Map" # [StashItem] == "true"
@@ -549,17 +551,17 @@
 [Type] == "Waterways Map" # [StashItem] == "true"
 
 // Level 81
-[Type] == "Maze Map" # [StashItem] == "true"
 [Type] == "Palace Map" # [StashItem] == "true"
 [Type] == "Shrine Map" # [StashItem] == "true"
 [Type] == "Vaal Temple Map" # [StashItem] == "true"
+[Type] == "Conservatory Map" # [StashItem] == "true"
 
 // Level 82
 [Type] == "Abyss Map" # [StashItem] == "true"
 [Type] == "Colosseum Map" # [StashItem] == "true"
 [Type] == "Core Map" # [StashItem] == "true"
-[Type] == "Phantasmagoria Map" # [StashItem] == "true"
-[Type] == "Malformation Map" # [StashItem] == "true"
+
+
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
@@ -887,7 +889,6 @@
 [Type] == "Deerskin Gloves" && [Rarity] == "Unique" //Maligaro's Virtuosity 
 [Type] == "Dragonscale Gauntlets" && [Rarity] == "Unique" //Surgebinders 
 [Type] == "Goathide Gloves" && [Rarity] == "Unique" //Hrimsorrow 
-[Type] == "Assassin's Mitts" && [Rarity] == "Unique" //Snakebite
 [Type] == "Golden Bracers" && [Rarity] == "Unique" //Demigod's Touch 
 [Type] == "Goliath Gauntlets" && [Rarity] == "Unique" // Empire's Grasp 
 [Type] == "Iron Gauntlets" && [Rarity] == "Unique" //Lochtonial Caress 
