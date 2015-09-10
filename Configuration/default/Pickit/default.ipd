@@ -1073,7 +1073,7 @@
 //                                          //
 //////////////////////////////////////////////
   
-[Type] == "IBoot Knife" && [Rarity] == "Unique" //Ungil's Gauche 
+[Type] == "Boot Knife" && [Rarity] == "Unique" //Ungil's Gauche 
 [Type] == "Fiend Dagger" && [Rarity] == "Unique" // The Consuming Dark 
 [Type] == "Flaying Knife" && [Rarity] == "Unique" //Mightflay 
 [Type] == "Imperial Skean" && [Rarity] == "Unique" //Divinarius
