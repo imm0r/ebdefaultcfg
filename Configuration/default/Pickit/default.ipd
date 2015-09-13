@@ -620,7 +620,7 @@
 //                   M A G I C   C R A F T                       //
 //                                                               //
 ///////////////////////////////////////////////////////////////////
-[Type] == "Harbinger Bow" && [Rarity] == "Magic" # [local_maximum_added_physical_damage] >= "33" # [StashItem] == "true"   // Tempered&Flaring
+[Type] == "Harbinger Bow" && [Rarity] == "Magic" # [local_maximum_added_physical_damage] >= "49" # [StashItem] == "true"   // Tempered&Flaring
 [Type] == "Harbinger Bow" && [Rarity] == "Magic" # [local_physical_damage_+%] >= "135" # [StashItem] == "true"          // Cruel&Tyrannical&Merciless   
 [Type] == "Maraketh Bow" && [Rarity] == "Magic" # ([local_socketed_gem_level_+] == "1" || [local_socketed_bow_gem_level_+] == "2") # [StashItem] == "true"   // +3 gem psn arrow craft
 
