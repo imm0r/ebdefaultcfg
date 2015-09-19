@@ -652,76 +652,22 @@
 //                             U N I Q U E  I T E M S                              //
 //                                                                                 //
 /////////////////////////////////////////////////////////////////////////////////////
-
-[Rarity] == "Unique" # [StashItem] == "true" // Keep all unique, comment this line if you want the bot to sell unique not defined in this file
-
-// [Rarity] == "Unique" # [SellItem] == "true" // Sell all unique that aren't defined in the pickit (be careful with recently added uniques)
  
-//////////////////////////////////////////////
-//                                          //
-//                Flasks		            //
-//                                          //
-//////////////////////////////////////////////
- 
-[Type] == "Sanctified Life Flask" && [Rarity] == "Unique" //Blood of the Karui 
-[Type] == "Greater Mana Flask" && [Rarity] == "Unique" //Doedre's Elixir
-[Type] == "Sanctified Mana Flask" && [Rarity] == "Unique" //Lavianga's Spirit
-[Type] == "Large Hybrid Flask" && [Rarity] == "Unique" //Divination Distillate
-[Type] == "Amethyst Flask" && [Rarity] == "Unique" //Atziri's Promise
-[Type] == "Quartz Flask" && [Rarity] == "Unique" //Forbidden Taste 
-[Type] == "Granite Flask" && [Rarity] == "Unique" # [flask_charges_used_+%] == "95" && [StashItem] == "true" //Lion's Roar 
-[Type] == "Granite Flask" && [Rarity] == "Unique" # [flask_charges_used_+%] <= "90" && [StashItem] == "true" //Rumi's Concoction
-[Type] == "Sapphire Flask" && [Rarity] == "Unique" //Taste of Hate 
-//////////////////////////////////////////////
-//                                          //
-//                M A P S                   //
-//                                          //
-//////////////////////////////////////////////
- 
+[Rarity] == "Unique" # [SellItem] == "true" // Sell all unique that aren't defined in the pickit (be careful with recently added uniques)
 
-[Type] == "Crypt Map" && [Rarity] == "Unique" # [StashItem] == "true" // The Coward's Trial
-[Type] == "Mountain Ledge Map" && [Rarity] == "Unique" # [StashItem] == "true" // Maelström of Chaos
-[Type] == "Reef Map" && [Rarity] == "Unique" # [StashItem] == "true" // Mao Kun
-[Type] == "Vaal Pyramid Map" && [Rarity] == "Unique" # [StashItem] == "true" // Vaults of Atziri
-[Type] == "Overgrown Shrine Map" && [Rarity] == "Unique" # [StashItem] == "true" // Acton's Nightmare
-[Type] == "Temple Map" && [Rarity] == "Unique" # [StashItem] == "true" // Poorjoy's Asylum
-[Type] == "Torture Chamber Map" && [Rarity] == "Unique" # [StashItem] == "true" // Oba's Cursed Trove
-[Type] == "Strand Map" && [Rarity] == "Unique" # [StashItem] == "true" // Whakawairua Tuahu
-[Type] == "Catacomb Map" && [Rarity] == "Unique" # [StashItem] == "true" // Olmec's Sanctum
-[Type] == "Necropolis Map" && [Rarity] == "Unique" # [StashItem] == "true" // Death and Taxes
-[Type] == "Promenade Map" && [Rarity] == "Unique" # [StashItem] == "true" // Hall of Grandmasters
-
- 
 //////////////////////////////////////////////
 //                                          //
 //                A m u l e t s             //
 //                                          //
 //////////////////////////////////////////////
  
-[Type] == "Onyx Amulet" && [Rarity] == "Unique" # [additional_all_attributes] >= "80" && [StashItem] == "true" // Astramentis
-[Type] == "Onyx Amulet" && [Rarity] == "Unique" # [base_item_found_rarity_+%] == "30" && [StashItem] == "true" // Eye of Chayula
-[Type] == "Onyx Amulet" && [Rarity] == "Unique" # [additional_all_attributes] <= "65" && [StashItem] == "true" // Carnage Heart 
-[Type] == "Gold Amulet" && [Rarity] == "Unique" # [additional_dexterity] == "10" && [StashItem] == "true" // The Ignomon 
-[Type] == "Gold Amulet" && [Rarity] == "Unique" # [TotalResistances] == "20" && [StashItem] == "true" // Demigod's Presence
-[Type] == "Citrine Amulet" && [Rarity] == "Unique" // Daresso's Salute 
-[Type] == "Coral Amulet" && [Rarity] == "Unique" // Araku Tiki
-[Type] == "Jade Amulet" && [Rarity] == "Unique" # [base_maximum_life] >= "40" && [StashItem] == "true" // Rashkaldor's Patience 
-[Type] == "Jade Amulet" && [Rarity] == "Unique" # [additional_strength] >= "20" && [StashItem] == "true" // Karui Ward
-[Type] == "Citrine Amulet" && [Rarity] == "Unique" // Daresso's Salute 
-[Type] == "Amber Amulet" && [Rarity] == "Unique" # [life_gained_on_block] >= "34" && [StashItem] == "true" // The Anvil
-[Type] == "Amber Amulet" && [Rarity] == "Unique" # [base_chaos_damage_resistance_%] >= "17" && [StashItem] == "true" // Blood of Corruption
-[Type] == "Turquoise Amulet" && [Rarity] == "Unique" # [base_lightning_damage_resistance_%] >= "30" && [StashItem] == "true"  // Victario's Acuity
-[Type] == "Turquoise Amulet" && [Rarity] == "Unique" # [base_maximum_life] >= "30" && [StashItem] == "true"  // Ungil's Harmony 
-[Type] == "Turquoise Amulet" && [Rarity] == "Unique" # [base_movement_velocity_+%] == "12" && [StashItem] == "true"  // Warped Timepiece 
-[Type] == "Agate Amulet" && [Rarity] == "Unique" # [base_maximum_life] >= "30" && [StashItem] == "true"   // Voll's Devotion
-[Type] == "Agate Amulet" && [Rarity] == "Unique" # [base_maximum_life] <= "20" && [StashItem] == "true" // Shaper's Seed
-[Type] == "Paua Amulet" && [Rarity] == "Unique" # [base_cold_damage_resistance_%] == "25" && [StashItem] == "true" // Sidebreath
-[Type] == "Paua Amulet" && [Rarity] == "Unique" # [base_maximum_mana] >= "30" && [StashItem] == "true" // Atziri's Foible
-[Type] == "Lapis Amulet" && [Rarity] == "Unique" # [base_critical_strike_multiplier_+%] >= "140" && [StashItem] == "true" // Marylene's Fallacy
-[Type] == "Lapis Amulet" && [Rarity] == "Unique" # [base_maximum_mana] >= "30" && [StashItem] == "true"  // Stone of Lazhwar
-[Type] == "Lapis Amulet" && [Rarity] == "Unique" # [base_maximum_life] == "21" && [StashItem] == "true"  // Tear of Purity 
-[Type] == "Jet Amulet" && [Rarity] == "Unique" // Talisman of the Victor
-
+[Type] == "Onyx Amulet" && [Rarity] == "Unique" // Carnage Heart / Eye of Chayula / Astramentis
+[Type] == "Gold Amulet" && [Rarity] == "Unique" // Demigod's Presence
+[Type] == "Amber Amulet" && [Rarity] == "Unique" // The Anvil
+[Type] == "Turquoise Amulet" && [Rarity] == "Unique" // Victario's Acuity
+[Type] == "Agate Amulet" && [Rarity] == "Unique" // Voll's Devotion & Shaper's Seed
+[Type] == "Paua Amulet" && [Rarity] == "Unique" && [base_maximum_mana] >= "50" // Atziri's Foible 
+[Type] == "Lapis Amulet" && [Rarity] == "Unique" // Marylene's Fallacy/Stone of Lazhwar/Tear of Purity
  
 //////////////////////////////////////////////
 //                                          //
@@ -729,22 +675,11 @@
 //                                          //
 //////////////////////////////////////////////
  
-[Type] == "Chain Belt" && [Rarity] == "Unique" # [base_maximum_mana] >= "45" && [StashItem] == "true" // Auxium
-[Type] == "Chain Belt" && [Rarity] == "Unique" # [additional_intelligence] >= "15" && [StashItem] == "true" // Bated Breath
-[Type] == "Chain Belt" && [Rarity] == "Unique" # [local_maximum_added_lightning_damage] >= "30" && [StashItem] == "true" // Maligaro's Restraint
-[Type] == "Heavy Belt" && [Rarity] == "Unique" # [life_leech_from_any_damage_permyriad] == "0.2" //Doryani's Invitation 
-[Type] == "Heavy Belt" && [Rarity] == "Unique" # [additional_strength] == "25" && [StashItem] == "true" //Meginord's Girdle
-[Type] == "Heavy Belt" && [Rarity] == "Unique" # [base_maximum_life] <= "40" && [StashItem] == "true"  //Belt of the Deceiver 
-[Type] == "Heavy Belt" && [Rarity] == "Unique" # [base_maximum_life] >= "70" && [StashItem] == "true"  //Dyadian Dawn 
-[Type] == "Cloth Belt" && [Rarity] == "Unique" # [additional_all_attributes] >= "20" && [StashItem] == "true"  //perandus blazon
-[Type] == "Cloth Belt" && [Rarity] == "Unique" # [base_fire_damage_resistance_%] >= "21" && [StashItem] == "true" //Sunblast  
-[Type] == "Leather Belt" && [Rarity] == "Unique" # [additional_intelligence] >= "20" && [StashItem] == "true" // Wurm's Molt 
-[Type] == "Leather Belt" && [Rarity] == "Unique" # [base_maximum_life] >= "75" && [StashItem] == "true"  // Immortal Flesh 
-[Type] == "Leather Belt" && [Rarity] == "Unique" # [additional_dexterity] >= "40" && [StashItem] == "true" // Headhunter
+[Type] == "Chain Belt" && [Rarity] == "Unique" // Auxium
+[Type] == "Heavy Belt" && [Rarity] == "Unique" //Meginord's Girdle/Doryani's Invitation 
+[Type] == "Cloth Belt" && [Rarity] == "Unique" //perandus blazon/Sunblast  
+[Type] == "Leather Belt" && [Rarity] == "Unique" // Headhunter/Immortal Flesh 
 [Type] == "Studded Belt" && [Rarity] == "Unique" // The Magnate
-[Type] == "Golden Obi" && [Rarity] == "Unique" // Demigod's Bounty 
-[Type] == "Rustic Sash" && [Rarity] == "Unique" // Prismweave 
-
  
 //////////////////////////////////////////////
 //                                          //
@@ -752,39 +687,18 @@
 //                                          //
 //////////////////////////////////////////////
  
-[Type] == "Gold Ring" && [Rarity] == "Unique" # [additional_dexterity] == "10" && [StashItem] == "true" //Andvarius
-[Type] == "Gold Ring" && [Rarity] == "Unique" # [base_maximum_life] >= "1" && [StashItem] == "true"   //Ventor's Gamble 
-[Type] == "Golden Hoop" && [Rarity] == "Unique" //Demigod's eye
-[Type] == "Coral Ring" && [Rarity] == "Unique" # [additional_strength] >= "10" && [StashItem] == "true" //Kaom's Sign
-[Type] == "Coral Ring" && [Rarity] == "Unique" # [base_cold_damage_resistance_%] >= "10" && [StashItem] == "true"  //Bloodboil 
-[Type] == "Coral Ring" && [Rarity] == "Unique" # [weapon_elemental_damage_+%] >= "20" && [StashItem] == "true"  //Sibyl's Lament 
-[Type] == "Moonstone Ring" && [Rarity] == "Unique" # [additional_intelligence] >= "60" && [StashItem] == "true" //Shavronne's Revelation
-[Type] == "Moonstone Ring" && [Rarity] == "Unique" # [minion_skill_area_of_effect_+%] >= "10" && [StashItem] == "true" //Heartbound Loop 
-[Type] == "Moonstone Ring" && [Rarity] == "Unique" # [attack_speed_+%] >= "10" && [StashItem] == "true" //Timeclasp 
-[Type] == "Iron Ring" && [Rarity] == "Unique" # [additional_all_attributes] >= "10" && [StashItem] == "true" //Le Heup of All 
-[Type] == "Iron Ring" && [Rarity] == "Unique" # [base_maximum_life] >= "20" && [StashItem] == "true"  // Blackheart
-[Type] == "Prismatic Ring" && [Rarity] == "Unique" # [light_radius_+%] == "31" && [StashItem] == "true" //  Lori's Lantern
-[Type] == "Prismatic Ring" && [Rarity] == "Unique" # [base_item_found_quantity_+%] >= "10" && [StashItem] == "true" // Theifs Torment 
-[Type] == "Prismatic Ring" && [Rarity] == "Unique" # [weapon_elemental_damage_+%] >= "15" && [StashItem] == "true" // The Taming 
-[Type] == "Sapphire Ring" && [Rarity] == "Unique" # [maximum_mana_+%] == "20" && [StashItem] == "true" //Dream Fragments
-[Type] == "Sapphire Ring" && [Rarity] == "Unique" # [base_fire_damage_resistance_%] >= "25" && [StashItem] == "true" //Pyre 
-[Type] == "Sapphire Ring" && [Rarity] == "Unique" # [local_maximum_added_cold_damage] >= "5" && [StashItem] == "true" //Tasalio's Sign 
-[Type] == "Ruby Ring" && [Rarity] == "Unique" # [additional_strength] >= "15" && [StashItem] == "true" //Ngamahu's Sign 
-[Type] == "Ruby Ring" && [Rarity] == "Unique" # [base_cold_damage_resistance_%] >= "25" && [StashItem] == "true" //Mokou's Embrace 
-[Type] == "Topaz Ring" && [Rarity] == "Unique" # [additional_all_attributes] >= "10" && [StashItem] == "true" //Kikazaru 
-[Type] == "Topaz Ring" && [Rarity] == "Unique" # [base_maximum_mana] >= "20" && [StashItem] == "true"  //Valako's
-[Type] == "Amethyst Ring" && [Rarity] == "Unique" # [base_chaos_damage_resistance_%] <= "33" && [StashItem] == "true" // Death Rush
-[Type] == "Amethyst Ring" && [Rarity] == "Unique" # [base_chaos_damage_resistance_%] >= "40" && [StashItem] == "true" // Ming's Heart
-[Type] == "Diamond Ring" && [Rarity] == "Unique" # [base_maximum_mana] <= "39" && [StashItem] == "true" // Gifts from Above 
-[Type] == "Diamond Ring" && [Rarity] == "Unique" # [base_maximum_mana] >= "40" && [StashItem] == "true" //Romira's Banquet
-[Type] == "Unset Ring" && [Rarity] == "Unique" //Voideye/Brinerot Mark/Malachai's Artifice/Mutewind Seal/Redblade Band    
-[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [local_maximum_added_cold_damage] >= "1" && [StashItem] == "true" //Berek's Pass 
-[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [local_maximum_added_fire_damage] >= "1" && [StashItem] == "true" //Berek's Respite 
-[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [local_maximum_added_lightning_damage] >= "1" && [StashItem] == "true" //Berek's Grip 
-[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [additional_intelligence] >= "15" && [StashItem] == "true"  //Call of the Brotherhood 
-[Type] == "Paua Ring" && [Rarity] == "Unique" # [base_maximum_mana] >= "26" && [StashItem] == "true" //Perandus Signet
-[Type] == "Paua Ring" && [Rarity] == "Unique" # [additional_intelligence] >= "5" && [StashItem] == "true" //Doedre's Damning  
-
+[Type] == "Gold Ring" && [Rarity] == "Unique" //Andvarius & Ventor's Gamble 
+[Type] == "Iron Ring" && [Rarity] == "Unique" # [base_item_found_rarity_+%] >= "1" && [StashItem] == "true" //Le Heup of All
+[Type] == "Paua Ring" && [Rarity] == "Unique" //Doedre's Damning, or Perandus
+[Type] == "Prismatic Ring" && [Rarity] == "Unique" // The Taming / Theifs Torment / Lori's Lantern
+[Type] == "Sapphire Ring" && [Rarity] == "Unique" //Dream Fragments
+[Type] == "Amethyst Ring" && [Rarity] == "Unique" //Death Rush / Ming's Heart
+[Type] == "Diamond Ring" && [Rarity] == "Unique" //Romira's Banquet / Gifts from Above 
+[Type] == "Unset Ring" && [Rarity] == "Unique" //Voideye
+[Type] == "Two-Stone Ring" && [Rarity] == "Unique" //Berek's set & Call of the Brotherhood
+[Type] == "Paua Ring" && [Rarity] == "Unique" //Perandus Signet/Doedre's Damning  
+[Type] == "Ruby Ring" && [Rarity] == "Unique" // Mokou's Embrace & Ngamahu's Sign & Emberwake
+[Type] == "Moonstone Ring" && [Rarity] == "Unique" // Shavronne's Revelation  & Timeclasp & Heartbound Loop
  
 //////////////////////////////////////////////
 //                                          //
@@ -795,407 +709,174 @@
 [Type] == "Penetrating Arrow Quiver" && [Rarity] == "Unique" //Drillneck
 [Type] == "Broadhead Arrow Quiver" && [Rarity] == "Unique" //Rearguard
 [Type] == "Sharktooth Arrow Quiver" && [Rarity] == "Unique" //Hyrri's Bite
-[Type] == "Blunt Arrow Quiver" && [Rarity] == "Unique" //Maloney's Nigtfall
-[Type] == "Fire Arrow Quiver" && [Rarity] == "Unique" //Blackgleam
-[Type] == "Spike-Point Arrow Quiver" && [Rarity] == "Unique" //Soul Strike
-[Type] == "Two-Point Arrow Quiver" && [Rarity] == "Unique" //Asphyxia's Wrath 
-[Type] == "Serrated Arrow Quiver" && [Rarity] == "Unique" //Craghead
-[Type] == "Heavy Quiver" && [Rarity] == "Unique" //Legacy Broadstroke
-
-
  
 //////////////////////////////////////////////
 //                                          //
 //                A r m o u r               //
 //                                          //
 //////////////////////////////////////////////
-[Type] == "Astral Plate" && [Rarity] == "Unique" //Death's Oath
-[Type] == "Buckskin Tunic" && [Rarity] == "Unique" //Ashrend 
-[Type] == "Carnal Armour" && [Rarity] == "Unique" // The Restless Ward 
-[Type] == "Conquest Chainmail" && [Rarity] == "Unique" // Kingsguard
-[Type] == "Copper Plate" && [Rarity] == "Unique" //Solaris Lorica 
-[Type] == "Crusader Chainmail" && [Rarity] == "Unique" //Ambu's Charge  
-[Type] == "Crusader Plate" && [Rarity] == "Unique" // Lioneye's Vision 
-[Type] == "Cutthroat's Garb" && [Rarity] == "Unique" // Bronn's Lithe 
-[Type] == "Desert Brigandine" && [Rarity] == "Unique" // Lightning Coil
-[Type] == "Destiny Leather" && [Rarity] == "Unique" // Queen of the forest
-[Type] == "Full Dragonscale" && [Rarity] == "Unique" // Daresso's Defiance 
-[Type] == "Full Wyrmscale" && [Rarity] == "Unique" //Belly of the beast
-[Type] == "Glorious Plate" && [Rarity] == "Unique" //Kaom's Heart
-[Type] == "Golden Plate" && [Rarity] == "Unique" // Greed's Embrace
-[Type] == "Holy Chainmail" && [Rarity] == "Unique" // Voll's Protector 
-[Type] == "Lacquered Garb" && [Rarity] == "Unique" # [base_maximum_mana] >= "90" && [StashItem] == "true"  // Cloak of Defiance 
-[Type] == "Lacquered Garb" && [Rarity] == "Unique" # [base_maximum_mana] <= "89" && [StashItem] == "true" // Victario's Influence 
-[Type] == "Latticed Ringmail" && [Rarity] == "Unique" // Icetomb 
-[Type] == "Necromancer Silks" && [Rarity] == "Unique" // Vis Mortis
-[Type] == "Occultist's Vestment" && [Rarity] == "Unique" && [StashItem] == "true" //Shavronne's Wrappings
-[Type] == "Ornate Ringmail" && [Rarity] == "Unique" && [StashItem] == "true" //Lightbane Raiment 
-[Type] == "Plate Vest" && [Rarity] == "Unique" // Bramblejack 
-[Type] == "Sacrificial Garb" && [Rarity] == "Unique" //Atziri's Splendour 
-[Type] == "Sage's Robe" && [Rarity] == "Unique" //Zahndethus' Cassock 
-[Type] == "Saintly Chainmail" && [Rarity] == "Unique" // Incandescent Heart 
-[Type] == "Scholar's Robe" && [Rarity] == "Unique" // Cloak of Flame  
-[Type] == "Sharkskin Tunic" && [Rarity] == "Unique" // The Rat Cage
-[Type] == "Simple Robe" && [Rarity] == "Unique" # [Sockets] == "6" && [Linked] == "6" && [StashItem] == "true" //Tabula Rasa
-[Type] == "Simple Robe" && [Rarity] == "Unique" # [base_maximum_life] == "6" && [StashItem] == "true"  //Thousand Ribbons 
-[Type] == "Spidersilk Robe" && [Rarity] == "Unique" # [local_energy_shield_+%] <= "120" && [StashItem] == "true" //Soul Mantle
-[Type] == "Spidersilk Robe" && [Rarity] == "Unique" # [additional_intelligence] >= "20" && [StashItem] == "true"  //The Covenant 
-[Type] == "Strapped Leather" && [Rarity] == "Unique" //Briskwrap 
-[Type] == "Triumphant Lamellar" && [Rarity] == "Unique" // Cherrubim's Maleficence 
+ 
+// [Type] == "Conquest Chainmail" && [Rarity] == "Unique" // Kingsguard
+// [Type] == "Carnal Armour" && [Rarity] == "Unique" // The Restless Ward
 [Type] == "Varnished Coat" && [Rarity] == "Unique" //Carcass Jack
-[Type] == "Widowsilk Robe" && [Rarity] == "Unique" // Infernal Mantle 
-[Type] == "Wild Leather" && [Rarity] == "Unique" // Foxshade 
+[Type] == "Spidersilk Robe" && [Rarity] == "Unique" # [local_energy_shield_+%] <= "180" && [StashItem] == "true" //Soul Mantle
 [Type] == "Zodiac Leather" && [Rarity] == "Unique" //Hyrri's Ire
-
-
-
-
-
-
-
+[Type] == "Occultist's Vestment" && [Rarity] == "Unique" # [base_lightning_damage_resistance_%] >= "30" && [StashItem] == "true" //Shavronne's Wrappings
+[Type] == "Glorious Plate" && [Rarity] == "Unique" //Kaom's Heart
+[Type] == "Desert Brigandine" && [Rarity] == "Unique" // Lightning Coil
+[Type] == "Holy Chainmail" && [Rarity] == "Unique" //Voll's Protector
+[Type] == "Full Wyrmscale" && [Rarity] == "Unique" //Belly of the beast
+[Type] == "Astral Plate" && [Rarity] == "Unique" //Death's Oath
+[Type] == "Simple Robe" && [Rarity] == "Unique" //Tabula Rasa
+[Type] == "Copper Plate" && [Rarity] == "Unique" //Solaris Lorica 
+[Type] == "Necromancer Silks" && [Rarity] == "Unique" //Vis Mortis 
+[Type] == "Destiny Leather" && [Rarity] == "Unique" // Queen of the forest
+[Type] == "Lacquered Garb" && [Rarity] == "Unique" // Cloak of Defiance & Victario's Influence
+[Type] == "Crusader Plate" && [Rarity] == "Unique" // Lioneye's Vision 
+ 
 //////////////////////////////////////////////
 //                                          //
 //                 B o o t s                //
 //                                          //
 //////////////////////////////////////////////
-[Type] == "Ancient Greaves" && [Rarity] == "Unique" //Redblade Tramplers 
-[Type] == "Bronzescale Boots" && [Rarity] == "Unique" //Lioneye's Paws 
-[Type] == "Clasped Boots" && [Rarity] == "Unique" //Sundance 
-[Type] == "Conjurer Boots" && [Rarity] == "Unique" //Rainbow Stride
-[Type] == "Deerskin Boots" && [Rarity] == "Unique" //Deerstalker 
-[Type] == "Dragonscale Boots" && [Rarity] == "Unique" //Darkray Vectors 
-[Type] == "Goathide Boots" && [Rarity] == "Unique" // Victario's Flight 
-[Type] == "Golden Caligae" && [Rarity] == "Unique" // Demigod's Stride
-[Type] == "Leatherscale Boots" && [Rarity] == "Unique" // Dusktoe 
-[Type] == "Legion Boots" && [Rarity] == "Unique" // Gang's Momentum
-[Type] == "Mesh Boots" && [Rarity] == "Unique" //wake of destruction
-[Type] == "Nubuck Boots" && [Rarity] == "Unique" # [base_item_found_quantity_+%] >= "14" && [StashItem] == "true" // Goldwyrm (IIQ 14-20 adjust as you need)
-[Type] == "Reinforced Greaves" && [Rarity] == "Unique" //Windscream
-[Type] == "Scholar Boots" && [Rarity] == "Unique" // Shavronne's Pace 
-[Type] == "Serpentscale Boots" && [Rarity] == "Unique" // Mutewind Whispersteps 
+ 
 [Type] == "Sharkskin Boots" && [Rarity] == "Unique" //The Blood Dance
-[Type] == "Silk Slippers" && [Rarity] == "Unique" //Bones of Ullr 
-[Type] == "Slink Boots" && [Rarity] == "Unique" //Atziri's Steps
+[Type] == "Nubuck Boots" && [Rarity] == "Unique" # [base_item_found_quantity_+%] >= "18" && [StashItem] == "true" //Almost Perfect Goldwyrm
+[Type] == "Conjurer Boots" && [Rarity] == "Unique" //Rainbow Stride
+[Type] == "Reinforced Greaves" && [Rarity] == "Unique" //Windscream
+[Type] == "Mesh Boots" && [Rarity] == "Unique" //wake of destruction
 [Type] == "Soldier Boots" && [Rarity] == "Unique" //Alberon's Warpath
-[Type] == "Stealth Boots" && [Rarity] == "Unique" //Sin Trek 
-[Type] == "Strapped Boots" && [Rarity] == "Unique" //Nomic's Storm 
+[Type] == "Golden Caligae" && [Rarity] == "Unique" //Demigod's Stride
+[Type] == "Leatherscale Boots" && [Rarity] == "Unique" // Dusktoe
+[Type] == "Slink Boots" && [Rarity] == "Unique" //Atziri's Steps
+[Type] == "Dragonscale Boots" && [Rarity] == "Unique" //Darkray Vectors 
 [Type] == "Titan Greaves" && [Rarity] == "Unique" //Kaom's Roots
-[Type] == "Trapper Boots" && [Rarity] == "Unique" // Brinerot Whalers 
-[Type] == "Velvet Slippers" && [Rarity] == "Unique" // Wondertrap 
-[Type] == "Wool Shoes" && [Rarity] == "Unique" // Wanderlust 
-
-
+[Type] == "Trapper Boots" && [Rarity] == "Unique" // Brinerot Whalers (Warbands only at the moment)
 
 //////////////////////////////////////////////
 //                                          //
 //                 G l o v e s              //
 //                                          //
 //////////////////////////////////////////////
-[Type] == "Assassin's Mitts" && [Rarity] == "Unique" //Snakebite
-[Type] == "Bronzescale Gauntlets" && [Rarity] == "Unique" # [additional_dexterity] >= "40" && [StashItem] == "true" //Slitherpinch 
-[Type] == "Bronzescale Gauntlets" && [Rarity] == "Unique" # [base_maximum_life] >= "30" && [StashItem] == "true"  //Vaal Caress  
-[Type] == "Chain Gloves" && [Rarity] == "Unique" //Shackles of the Wretched 
-[Type] == "Clasped Mitts" && [Rarity] == "Unique" //Shadows and Dust 
-[Type] == "Conjurer Gloves" && [Rarity] == "Unique" //Voidbringer 
-[Type] == "Crusader Gloves" && [Rarity] == "Unique" //Repentance
-[Type] == "Deerskin Gloves" && [Rarity] == "Unique" //Maligaro's Virtuosity 
-[Type] == "Dragonscale Gauntlets" && [Rarity] == "Unique" //Surgebinders 
-[Type] == "Goathide Gloves" && [Rarity] == "Unique" //Hrimsorrow 
+ 
+[Type] == "Steelscale Gauntlets" && [Rarity] == "Unique" # [base_item_found_rarity_+%] >= "45" && [StashItem] == "true" //Almost Perfect IIR Aurseize
+[Type] == "Deerskin Gloves" && [Rarity] == "Unique" //Maligaro's virtuosity
+[Type] == "Wool Gloves" && [Rarity] == "Unique" # [base_item_found_quantity_+%] >= "16" && [StashItem] == "true" //Almost Perfect Sadima's Touch
 [Type] == "Golden Bracers" && [Rarity] == "Unique" //Demigod's Touch 
-[Type] == "Goliath Gauntlets" && [Rarity] == "Unique" // Empire's Grasp 
-[Type] == "Iron Gauntlets" && [Rarity] == "Unique" //Lochtonial Caress 
-[Type] == "Ironscale Gauntlets" && [Rarity] == "Unique" // Flesh and Spirit  
-[Type] == "Legion Gloves" && [Rarity] == "Unique" // Null and Void 
+[Type] == "Steel Gauntlets" && [Rarity] == "Unique" //Deshret's Vise / Meginord's Vise
+[Type] == "Assassin's Mitts" && [Rarity] == "Unique" //Snakebite
+[Type] == "Conjurer Gloves" && [Rarity] == "Unique" //Voidbringer 
 [Type] == "Murder Mitts" && [Rarity] == "Unique" //Thunderfist 
-[Type] == "Silk Gloves" && [Rarity] == "Unique" //Asenath's Gentle Touch  
-[Type] == "Soldier Gloves" && [Rarity] == "Unique" //Southbound 
-[Type] == "Steel Gauntlets" && [Rarity] == "Unique" //Meginord's Vise 
-[Type] == "Steelscale Gauntlets" && [Rarity] == "Unique" # [base_item_found_rarity_+%] >= "40" && [StashItem] == "true" // Aurseize (IIR 40-50, adjust as you want)
-[Type] == "Steelscale Gauntlets" && [Rarity] == "Unique" # [additional_intelligence] >= "20" && [StashItem] == "true" //Arimagius' Honor 
-[Type] == "Steelscale Gauntlets" && [Rarity] == "Unique" # [additional_dexterity] >= "40" && [StashItem] == "true" //Deadman's Hand 
-[Type] == "Steelscale Gauntlets" && [Rarity] == "Unique" # [base_cast_speed_+%] == "10" && [StashItem] == "true" //Kalisa's Grace
-[Type] == "Steelscale Gauntlets" && [Rarity] == "Unique" # [base_cold_damage_resistance_%] >= "40" && [StashItem] == "true" //Wurmfist
-[Type] == "Strapped Mitts" && [Rarity] == "Unique" # [1083] >= "600" // Facebreaker (600-800)
-[Type] == "Vaal Gauntlets" && [Rarity] == "Unique" # [additional_intelligence] >= "60" && [StashItem] == "true" // Atziri's Acuity 
-[Type] == "Vaal Gauntlets" && [Rarity] == "Unique" # [chance_to_shock_%] == "10" && [StashItem] == "true" // Doryani's Fist
-[Type] == "Velvet Gloves" && [Rarity] == "Unique" //Doedre's Tenure
-[Type] == "Wool Gloves" && [Rarity] == "Unique" # [base_item_found_quantity_+%] >= "12" && [StashItem] == "true" // Sadima's Touch (IIQ 12-16)
-[Type] == "Wrapped Mitts" && [Rarity] == "Unique" // Ondar's Clasp 
-
-
+[Type] == "Chain Gloves" && [Rarity] == "Unique" // Shackles of the Wretched
+[Type] == "Vaal Gauntlets" && [Rarity] == "Unique" // Atziri's Acuity 
+[Type] == "Goliath Gauntlets" && [Rarity] == "Unique" // Empire's Grasp 
+//[Type] == "Crusader Gloves" && [Rarity] == "Unique" // Repentance 
 
 //////////////////////////////////////////////
 //                                          //
 //                 H e l m e t s            //
 //                                          //
 //////////////////////////////////////////////
-[Type] == "Aventail Helmet" && [Rarity] == "Unique" // Mindspiral 
+ 
 [Type] == "Ezomyte Burgonet" && [Rarity] == "Unique" // Abyssus
-[Type] == "Festival Mask" && [Rarity] == "Unique" // Leer Cast 
-[Type] == "Gilded Sallet" && [Rarity] == "Unique" //Deidbell  
-[Type] == "Golden Mask" && [Rarity] == "Unique" //The Three Dragons 
-[Type] == "Golden Wreath" && [Rarity] == "Unique" //Demigod's Triumph
-[Type] == "Great Crown" && [Rarity] == "Unique" //Geofri's Crest 
-[Type] == "Great Helmet" && [Rarity] == "Unique" //Veil of the Night 
-[Type] == "Hubris Circlet" && [Rarity] == "Unique" # [life_leech_from_any_damage_permyriad] >= "0.4" //Crown of Eyes
-[Type] == "Hubris Circlet" && [Rarity] == "Unique" # [base_lightning_damage_resistance_%] >= "25" && [StashItem] == "true" //Ylfeban's Trickery
-[Type] == "Iron Circlet" && [Rarity] == "Unique" //Asenath's Mark  
-[Type] == "Iron Hat" && [Rarity] == "Unique" //Ezomyte Peak 
-[Type] == "Iron Mask" && [Rarity] == "Unique" //Malachai's Simula 
-[Type] == "Lacquered Helmet" && [Rarity] == "Unique" //Black Sun Crest 
-[Type] == "Leather Cap" && [Rarity] == "Unique" # [base_resist_all_elements_%] >= "30" && [StashItem] == "true" //Goldrim (resist 30-40)
-[Type] == "Leather Hood" && [Rarity] == "Unique" //Heatshiver 
-[Type] == "Lunaris Circlet" && [Rarity] == "Unique" //Doedre's Scorn 
-[Type] == "Mind Cage" && [Rarity] == "Unique" # [local_energy_shield_+%] <= "100" && [StashItem] == "true" //Rime Gaze 
-[Type] == "Mind Cage" && [Rarity] == "Unique" # [spell_damage_+%] >= "80" && [StashItem] == "true"  //Scold's Bridle  
-[Type] == "Necromancer Circlet" && [Rarity] == "Unique" //Chitus Apex
-[Type] == "Nightmare Bascinet" && [Rarity] == "Unique" # [base_maximum_life] >= "120" && [StashItem] == "true"  //Bringer of Rain
-[Type] == "Nightmare Bascinet" && [Rarity] == "Unique" # [additional_dexterity] >= "50" && [StashItem] == "true" //Devoto's Devotion 
-[Type] == "Prophet Crown" && [Rarity] == "Unique" //The Broken Crown 
-[Type] == "Raven Mask" && [Rarity] == "Unique" //The Gull 
-[Type] == "Regicide Mask" && [Rarity] == "Unique" //Crown of the Pale King 
-[Type] == "Samite Helmet" && [Rarity] == "Unique" //Hrimnor's Resolve 
-[Type] == "Secutor Helm" && [Rarity] == "Unique" //Skullhead 
-[Type] == "Silken Hood" && [Rarity] == "Unique" //Starkonja's Head 
+[Type] == "Nightmare Bascinet" && [Rarity] == "Unique" //Bringer of Rain
 [Type] == "Sinner Tricorne" && [Rarity] == "Unique" //Alpha's howl
-[Type] == "Soldier Helmet" && [Rarity] == "Unique" //Honourhome 
-[Type] == "Tricorne" && [Rarity] == "Unique" //Fairgraves' Tricorne 
+[Type] == "Necromancer Circlet" && [Rarity] == "Unique" //Chitus Apex
 [Type] == "Ursine Pelt" && [Rarity] == "Unique" //Rat's Nest
+[Type] == "Hubris Circlet" && [Rarity] == "Unique" //Crown of Eyes
+[Type] == "Golden Wreath" && [Rarity] == "Unique" //Demigod's Triumph
+[Type] == "Nightmare Bascinet" && [Rarity] == "Unique" //Devoto's Devotion 
+[Type] == "Secutor Helm" && [Rarity] == "Unique" //Skullhead 
+[Type] == "Leather Cap" && [Rarity] == "Unique" # [base_resist_all_elements_%] >= "40" && [StashItem] == "true" //Goldrim 
+[Type] == "Visored Sallet" && [Rarity] == "Unique" # [base_item_found_rarity_+%] >= "30" && [StashItem] == "true" //Perfect The Peregrine 
+[Type] == "Mind Cage" && [Rarity] == "Unique" //Rime Gaze 
+[Type] == "Silken Hood" && [Rarity] == "Unique" //Starkonja's Head 
+[Type] == "Golden Mask" && [Rarity] == "Unique" //The Three Dragons 
 [Type] == "Vaal Mask" && [Rarity] == "Unique" //The Vertex
-[Type] == "Vine Circlet" && [Rarity] == "Unique" //Crown of Thorns 
-[Type] == "Visored Sallet" && [Rarity] == "Unique" # [base_item_found_rarity_+%] >= "20" && [StashItem] == "true" // The Peregrine (IIR 20-30)
-
-
-
-
 
 //////////////////////////////////////////////
 //                                          //
 //                 S h i e l d s            //
 //                                          //
 //////////////////////////////////////////////
-[Type] == "Archon Kite Shield" && [Rarity] == "Unique" //Prism Guardian 
-[Type] == "Baroque Round Shield" && [Rarity] == "Unique" //Daresso's Courage 
-[Type] == "Branded Kite Shield" && [Rarity] == "Unique" //Saffell's Frame  
-[Type] == "Brass Spirit Shield" && [Rarity] == "Unique" //Sentari's Answer  
-[Type] == "Cedar Tower Shield" && [Rarity] == "Unique" //Trolltimber Spire 
-[Type] == "Champion Kite Shield" && [Rarity] == "Unique" //Aegis Aurora
-[Type] == "Compound Spiked Shield" && [Rarity] == "Unique" //Maligaro's Lens 
-[Type] == "Corrugated Buckler" && [Rarity] == "Unique" //Great Old One's Ward 
-[Type] == "Ebony Tower Shield" && [Rarity] == "Unique" //Chernobog's Pillar 
-[Type] == "Enameled Buckler" && [Rarity] == "Unique" //Mutewind Pennant
+ 
 [Type] == "Golden Buckler" && [Rarity] == "Unique" //Atziri's Mirror
-[Type] == "Mosaic Kite Shield" && [Rarity] == "Unique" //Rise of the Phoenix 
-[Type] == "Painted Buckler" && [Rarity] == "Unique" //Kaltenhalt 
-[Type] == "Painted Tower Shield" && [Rarity] == "Unique" //Redblade Banner 
-[Type] == "Pine Buckler" && [Rarity] == "Unique" //Crest of Perandus 
 [Type] == "Pinnacle Tower Shield" && [Rarity] == "Unique" //Lioneye's Remorse
-[Type] == "Plank Kite Shield" && [Rarity] == "Unique" //Springleaf 
-[Type] == "Reinforced Tower Shield" && [Rarity] == "Unique" //Titucius' Span 
-[Type] == "Rotted Round Shield" && [Rarity] == "Unique" # [base_item_found_rarity_+%] >= "30" && [StashItem] == "true"  //Wheel of the Stormsail (IIR 30-40)
-[Type] == "Studded Round Shield" && [Rarity] == "Unique" //The Deep One's Hide 
+[Type] == "Titanium Spirit Shield" && [Rarity] == "Unique" //rathpith globe
+[Type] == "Champion Kite Shield" && [Rarity] == "Unique" //Aegis Aurora
+[Type] == "Mosaic Kite Shield" && [Rarity] == "Unique" //Rise of the Phoenix 
+[Type] == "Rotted Round Shield" && [Rarity] == "Unique" //Wheel of the Stormsail
+[Type] == "Baroque Round Shield" && [Rarity] == "Unique" //Daresso's Courage 
+[Type] == "Tarnished Spirit Shield" && [Rarity] == "Unique" //Matua Tupuna 
+[Type] == "Archon Kite Shield" && [Rarity] == "Unique" //Prism Guardian 
+[Type] == "Branded Kite Shield" && [Rarity] == "Unique" //Saffell's Frame  
 [Type] == "Supreme Spiked Shield" && [Rarity] == "Unique" //Jaws of Agony
-[Type] == "Tarnished Spirit Shield" && [Rarity] == "Unique" # [attack_speed_+%] >= "8" && [StashItem] == "true"  //Brinerot Flag 
-[Type] == "Tarnished Spirit Shield" && [Rarity] == "Unique" # [base_maximum_mana] >= "15" && [StashItem] == "true" //Matua Tupuna 
-[Type] == "Titanium Spirit Shield" && [Rarity] == "Unique" //Rathpith globe
-[Type] == "Vaal Buckler" && [Rarity] == "Unique" //Thousand Teeth Temu
-[Type] == "War Buckler" && [Rarity] == "Unique" //Chalice of Horrors 
-
 
 //////////////////////////////////////////////
 //                                          //
 //                 W e a p o n s            //
 //                                          //
 //////////////////////////////////////////////
-//////////////////////////////////////////////
-//                                          //
-//                 1H Axe                   //
-//                                          //
-//////////////////////////////////////////////
-[Type] == "Cleaver" && [Rarity] == "Unique" //Dreadarc 
-[Type] == "Decorative Axe" && [Rarity] == "Unique" //Relentless Fury 
-[Type] == "Infernal Axe" && [Rarity] == "Unique" //Dyadus
-[Type] == "Jade Hatchet" && [Rarity] == "Unique" //The Screaming Eagle
+
+
 [Type] == "Siege Axe" && [Rarity] == "Unique" //Soul Taker
-[Type] == "Tomahawk" && [Rarity] == "Unique" //Moonbender's Wing 
-[Type] == "Vaal Hatchet" && [Rarity] == "Unique" // Jack, the Axe 
-
-//////////////////////////////////////////////
-//                                          //
-//                2H Axe                    //
-//                                          //
-//////////////////////////////////////////////
-[Type] == "Despot Axe" && [Rarity] == "Unique" //Kingmaker 
-[Type] == "Headsman Axe" && [Rarity] == "Unique" //The Blood Reaper
-[Type] == "Jasper Chopper" && [Rarity] == "Unique" //The Harvest 
-[Type] == "Karui Chopper" && [Rarity] == "Unique" //Kaom's Primacy
-[Type] == "Poleaxe" && [Rarity] == "Unique" //Wideswing 
-[Type] == "Shadow Axe" && [Rarity] == "Unique" //Reaper's Pursuit
+[Type] == "Infernal Axe" && [Rarity] == "Unique" //Dyadus
 [Type] == "Sundering Axe" && [Rarity] == "Unique" //Wings of Entropy
+[Type] == "Shadow Axe" && [Rarity] == "Unique" //Reaper's Pursuit
 [Type] == "Vaal Axe" && [Rarity] == "Unique" //Atziri's Disfavour
-[Type] == "Woodsplitter" && [Rarity] == "Unique" //Limbsplit 
-
-//////////////////////////////////////////////
-//                                          //
-//                 Bows                     //
-//                                          //
-//////////////////////////////////////////////
-[Type] == "Assassin Bow" && [Rarity] == "Unique" # [additional_dexterity] >= "10" && [StashItem] == "true" //Chin Sol 
-[Type] == "Assassin Bow" && [Rarity] == "Unique" # [local_physical_damage_+%] <= "125" && [StashItem] == "true" //Darkscorn 
-[Type] == "Crude Bow" && [Rarity] == "Unique" //Silverbranch 
-[Type] == "Death Bow" && [Rarity] == "Unique" //Death's Harp 
-[Type] == "Decimation Bow" && [Rarity] == "Unique" //Infractem 
-[Type] == "Imperial Bow" && [Rarity] == "Unique" # [local_physical_damage_+%] >= "150" && [StashItem] == "true" //Lioneye's Glare
-[Type] == "Imperial Bow" && [Rarity] == "Unique" # [local_minimum_added_cold_damage] >= "1" && [StashItem] == "true"  //Windripper
-[Type] == "Long Bow" && [Rarity] == "Unique" //Storm Cloud 
-[Type] == "Ranger Bow" && [Rarity] == "Unique" // Null's Inclination 
-[Type] == "Royal Bow" && [Rarity] == "Unique" // Doomfletch 
-[Type] == "Short Bow" && [Rarity] == "Unique" //Quill Rain 
-[Type] == "Spine Bow" && [Rarity] == "Unique" //Voltaxic Rift
-
-//////////////////////////////////////////////
-//                                          //
-//                  Claws        		    //
-//                                          //
-//////////////////////////////////////////////
-[Type] == "Awl" && [Rarity] == "Unique" //Wildslash 
-[Type] == "Eye Gouger" && [Rarity] == "Unique" //Essentia Sanguis 
-[Type] == "Fright Claw" && [Rarity] == "Unique" //Mortem Morsu 
-[Type] == "Gut Ripper" && [Rarity] == "Unique" //Ornament of the East
-[Type] == "Hellion's Paw" && [Rarity] == "Unique" //Bloodseeker
-[Type] == "Nailed Fist" && [Rarity] == "Unique" //Last Resort 
-[Type] == "Thresher Claw" && [Rarity] == "Unique" //Cybil's Paw 
-[Type] == "Timeworn Claw" && [Rarity] == "Unique" //Al Dhih 
-
-//////////////////////////////////////////////
-//                                          //
-//                 Daggers		            //
-//                                          //
-//////////////////////////////////////////////
-  
-[Type] == "Boot Knife" && [Rarity] == "Unique" //Ungil's Gauche 
-[Type] == "Fiend Dagger" && [Rarity] == "Unique" // The Consuming Dark 
-[Type] == "Flaying Knife" && [Rarity] == "Unique" //Mightflay 
-[Type] == "Imperial Skean" && [Rarity] == "Unique" //Divinarius
-[Type] == "Platinum Kris" && [Rarity] == "Unique" // Mark of the Doubting Knight 
-[Type] == "Royal Skean" && [Rarity] == "Unique" //Heartbreaker 
-[Type] == "Skinning Knife" && [Rarity] == "Unique" // Goredrill 
-[Type] == "Slaughter Knife" && [Rarity] == "Unique" //Bino's Kitchen Knife
-[Type] == "Stiletto" && [Rarity] == "Unique" //Bloodplay 
-
-//////////////////////////////////////////////
-//                                          //
-//                 Fishing rods		        //
-//                                          //
-//////////////////////////////////////////////
-[Type] == "Fishing Rod" && [Rarity] == "Unique" //Song of the Sirens 
-
-
-//////////////////////////////////////////////
-//                                          //
-//                 1H Maces		            //
-//                                          //
-//////////////////////////////////////////////
 [Type] == "Auric Mace" && [Rarity] == "Unique" // Callinellus Malleus
-[Type] == "Dream Mace" && [Rarity] == "Unique" //Flesh-Eater 
-[Type] == "Gavel" && [Rarity] == "Unique" # [local_minimum_added_cold_damage] >= "1" && [StashItem] == "true" // Cameria's Maul 
-[Type] == "Gavel" && [Rarity] == "Unique" # [local_physical_damage_+%] <= "120" && [StashItem] == "true" // Mjolner 
-[Type] == "Spiked Club" && [Rarity] == "Unique" //Gorebreaker 
-[Type] == "War Hammer" && [Rarity] == "Unique" # [base_lightning_damage_resistance_%] >= "20" && [StashItem] == "true"   //Brightbeak 
-[Type] == "War Hammer" && [Rarity] == "Unique" # [base_maximum_life] >= "10" && [StashItem] == "true"  //Lavianga's Wisdom  
+[Type] == "Vaal Hatchet" && [Rarity] == "Unique" // Jack, the Axe
 
-/// Scepters ///
-[Type] == "Crystal Sceptre" && [Rarity] == "Unique" # [local_physical_damage_+%] >= "150" && [StashItem] == "true" //Nycta's Lantern
-[Type] == "Crystal Sceptre" && [Rarity] == "Unique" # [local_physical_damage_+%] <= "100" && [StashItem] == "true" //The Supreme Truth 
-[Type] == "Karui Sceptre" && [Rarity] == "Unique" // Death's Hand 
-[Type] == "Ritual Sceptre" && [Rarity] == "Unique" // Brutus' Lead Sprinkler
-[Type] == "Shadow Sceptre" && [Rarity] == "Unique" //The Dark Seer 
-[Type] == "Vaal Sceptre" && [Rarity] == "Unique"  # [additional_strength] >= "50" && [StashItem] == "true" //Doon Cuebiyari
-[Type] == "Vaal Sceptre" && [Rarity] == "Unique" # [spell_damage_+%] >= "80" && [StashItem] == "true"  //Doryani's Catalyst
-[Type] == "Void Sceptre" && [Rarity] == "Unique" //Mon'tregul's Grasp 
-
-//////////////////////////////////////////////
-//                                          //
-//                 2H Maces		            //
-//                                          //
-//////////////////////////////////////////////
-[Type] == "Brass Maul" && [Rarity] == "Unique" //Geofri's Baptism 
-[Type] == "Dread Maul" && [Rarity] == "Unique" //Voidhome 
-[Type] == "Great Mallet" && [Rarity] == "Unique" //Chober Chaber 
-[Type] == "Jagged Maul" && [Rarity] == "Unique" //Quecholli 
-[Type] == "Karui Maul" && [Rarity] == "Unique" //Marohi Erqi
-[Type] == "Sledgehammer" && [Rarity] == "Unique" //Hrimnor's Hymn 
-[Type] == "Steelhead" && [Rarity] == "Unique" //Jorrhast's Blacksteel 
-[Type] == "Terror Maul" && [Rarity] == "Unique" //Kongor's Undying Rage 
-
-//////////////////////////////////////////////
-//                                          //
-//                 1H Swords	            //
-//                                          //
-//////////////////////////////////////////////
-[Type] == "Corsair Sword" && [Rarity] == "Unique" // Ichimonji
-[Type] == "Dusk Blade" && [Rarity] == "Unique" //Ephemeral Edge 
-[Type] == "Elegant Sword" && [Rarity] == "Unique" # [local_physical_damage_+%] >= "250" && [StashItem] == "true"//The Goddess Scorned
-[Type] == "Elegant Sword" && [Rarity] == "Unique" # [local_physical_damage_+%] <= "80" && [StashItem] == "true" //Lakishu's Blade 
+[Type] == "Imperial Bow" && [Rarity] == "Unique" //Lioneye's Glare / Windripper
+[Type] == "Spine Bow" && [Rarity] == "Unique" //Voltaxic Rift
+[Type] == "Ranger Bow" && [Rarity] == "Unique" // Null's Inclination 
+ 
 [Type] == "Eternal Sword" && [Rarity] == "Unique" //Dreamfeather
-[Type] == "Legion Sword" && [Rarity] == "Unique" //Hyaon's Fury 
-[Type] == "Rusted Sword" && [Rarity] == "Unique" //Redbeak 
-[Type] == "Sabre" && [Rarity] == "Unique" //The Princess 
-[Type] == "Twilight Blade" && [Rarity] == "Unique" //Prismatic Eclipse
-[Type] == "Vaal Blade" && [Rarity] == "Unique" //Rebuke of the Vaal
-
-/// Thursting Swords ///
-[Type] == "Whalebone Rapier" && [Rarity] == "Unique" //The Goddess Bound 
-[Type] == "Jagged Foil" && [Rarity] == "Unique" //Fidelitas' Spike 
-[Type] == "Basket Rapier" && [Rarity] == "Unique" //Aurumvorax 
-
-//////////////////////////////////////////////
-//                                          //
-//                 2H Swords	            //
-//                                          //
-//////////////////////////////////////////////
-[Type] == "Bastard Sword" && [Rarity] == "Unique" //Shiversting 
-[Type] == "Etched Greatsword" && [Rarity] == "Unique" //Edge of Madness
-[Type] == "Highland Blade" && [Rarity] == "Unique" //Rigvald's Charge
 [Type] == "Infernal Sword" && [Rarity] == "Unique" //Oro's Sacrifice
-[Type] == "Lion Sword" && [Rarity] == "Unique" //Doomsower 
-[Type] == "Ornate Sword" && [Rarity] == "Unique" //Queen's Decree 
-[Type] == "Tiger Sword" && [Rarity] == "Unique" //Terminus Est 
+[Type] == "Vaal Blade" && [Rarity] == "Unique" //Rebuke of the Vaal
+[Type] == "Vaal Greatsword" && [Rarity] == "Unique" //Razorwraith
+[Type] == "Corsair Sword" && [Rarity] == "Unique" // Ichimonji
+ 
+[Type] == "Hellion's Paw" && [Rarity] == "Unique" //Bloodseeker
+[Type] == "Imperial Skean" && [Rarity] == "Unique" //Divinarius
+[Type] == "Slaughter Knife" && [Rarity] == "Unique" //Bino's Kitchen Knife
+[Type] == "Fiend Dagger" && [Rarity] == "Unique" // The Consuming Dark 
+ 
+[Type] == "Karui Chopper" && [Rarity] == "Unique" //Kaom's Primacy
+[Type] == "Karui Maul" && [Rarity] == "Unique" //Marohi Erqi
+[Type] == "Terror Maul" && [Rarity] == "Unique" //Kongor's Undying Rage 
+[Type] == "Gavel" && [Rarity] == "Unique" // Mjolner
 
-//////////////////////////////////////////////
-//                                          //
-//                 Staves		            //
-//                                          //
-//////////////////////////////////////////////
-[Type] == "Coiled Staff" && [Rarity] == "Unique" // Dying Breath 
-[Type] == "Gnarled Branch" && [Rarity] == "Unique" # [local_physical_damage_+%] == "100" && [StashItem] == "true" // The Blood Thorn 
-[Type] == "Gnarled Branch" && [Rarity] == "Unique" # [local_physical_damage_+%] <= "50" && [StashItem] == "true" // Fencoil  
-[Type] == "Imperial Staff" && [Rarity] == "Unique" // Agnerod South / East / North  //// No way to distinguish
-[Type] == "Iron Staff" && [Rarity] == "Unique" //Realmshaper 
-[Type] == "Judgement Staff" && [Rarity] == "Unique" # [local_minimum_added_physical_damage] >= "1" && [StashItem] == "true" //Hegemony's Era 
-[Type] == "Judgement Staff" && [Rarity] == "Unique" # [spell_damage_+%] >= "120" && [StashItem] == "true" //Pledge of Hands
-[Type] == "Lathi" && [Rarity] == "Unique" //Searing Touch
-[Type] == "Long Staff" && [Rarity] == "Unique" //Pillar of the Caged god
+[Type] == "Judgement Staff" && [Rarity] == "Unique" //Pledge of Hands
+[Type] == "Long Staff" && [Rarity] == "Unique" //Pillar of the Caged god/Searing Touch
 [Type] == "Maelström Staff" && [Rarity] == "Unique" //Taryn's Shiver
-[Type] == "Military Staff" && [Rarity] == "Unique" //Tremor Rod 
-[Type] == "Royal Staff" && [Rarity] == "Unique" //The Stormheart 
 [Type] == "Vile Staff" && [Rarity] == "Unique" // The Whispering Ice 
+[Type] == "Imperial Staff" && [Rarity] == "Unique" // Agnerod South
 [Type] == "Serpentine Staff" && [Rarity] == "Unique" // Sire of Shards
+[Type] == "Judgement Staff" && [Rarity] == "Unique" //Pledge of Hands
 
-//////////////////////////////////////////////
-//                                          //
-//                 Wands		            //
-//                                          //
-//////////////////////////////////////////////
-[Type] == "Driftwood Wand" && [Rarity] == "Unique" //Lifesprig 
-[Type] == "Engraved Wand" && [Rarity] == "Unique" //Midnight Bargain
-[Type] == "Goat's Horn" && [Rarity] == "Unique" //Abberath's Horn 
-[Type] == "Imbued Wand" && [Rarity] == "Unique" //Moonsorrow 
+[Type] == "Vaal Sceptre" && [Rarity] == "Unique" //Doryani's Catalyst
+[Type] == "Void Sceptre" && [Rarity] == "Unique" //Mon'tregul's Grasp 
+[Type] == "Crystal Sceptre" && [Rarity] == "Unique" //The Supreme Truth
+[Type] == "Vaal Sceptre" && [Rarity] == "Unique" //Doon Cuebiyari
+ 
 [Type] == "Opal Wand" && [Rarity] == "Unique" //Apep's Rage
+[Type] == "Engraved Wand" && [Rarity] == "Unique" //Midnight Bargain
 [Type] == "Prophecy Wand" && [Rarity] == "Unique" //Void Battery
-[Type] == "Sage Wand" && [Rarity] == "Unique" //Twyzel 
-[Type] == "Spiraled Wand" && [Rarity] == "Unique" //Reverberation Rod
 [Type] == "Tornado Wand" && [Rarity] == "Unique" //Piscator's Vigil
+
+
+
+[Type] == "Fishing Rod" && [Rarity] == "Unique" //Song of the Sirens 
+[Type] == "Fishing Rod" && [Rarity] == "Rare"
+[Type] == "Fishing Rod" && [Rarity] == "Magic"
+[Type] == "Fishing Rod" && [Rarity] == "Normal"
+ 
+[Type] == "Large Hybrid Flask" && [Rarity] == "Unique" //Divination Distillate
+[Type] == "Amethyst Flask" && [Rarity] == "Unique" //Atziri's Promise
+[Type] == "Granite Flask" && [Rarity] == "Unique" //Rumi's Concoction & Lion's Roar
+
+
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
