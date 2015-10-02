@@ -11,7 +11,7 @@
 
 // Syntax is: [Key] operator "Value"
 // Key could be replaced by any of the following list, operator could be ==, <=, >=, <, > and Value could be any corresponding value (ie. a number if type is Quality)
-// Key List: Type, ItemLevel, MapLevel, Armor, Evasion, Energy Shield, Computed Armor, Computed Evasion, Computed Energy Shield, Rarity, Quality, Sockets, Linked, and all the mods found in ModsList.html file.
+// Key List: Type, ItemLevel, MapTier, Armor, Evasion, Energy Shield, Computed Armor, Computed Evasion, Computed Energy Shield, Rarity, Quality, Sockets, Linked, and all the mods found in ModsList.html file.
 // You can use a mod by its index (if it is not in the ModsList.txt file) this way [modindex] == "value", ie. [587] == "30" for +30 int mod. Press F7 to dump inventory and find mod indexes.
 // Flags that can be used are : [StashItem] =="true", [SellItem] == "true", [SellUnid] == "true". Please note that [SellItem] tag will ALWAYS make the bot identify item.
 // About Key Rarity, only operators == and != can be used and possible values are: "Normal", "Magic", "Rare", "Unique".
@@ -444,15 +444,13 @@
 [Type] == "Assassin's Favour" # [StashItem] == "true"
 [Type] == "Loyalty" # [StashItem] == "true"
 [Type] == "Scholar of the Seas" # [StashItem] == "true"
-
+[Type] == "The Twins" # [StashItem] == "true"
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
 //                                  M A P S                                        //
 //                                                                                 //
 /////////////////////////////////////////////////////////////////////////////////////
-// Take all maps, comment out if you want to specify which map to pick up bellow
-[Category] == "Map" #[StashItem] == "true"
 
 [Type] == "Sacrifice at Dawn" # [StashItem] == "true" //Sacrifice map
 [Type] == "Sacrifice at Noon" # [StashItem] == "true" //Sacrifice map
@@ -463,9 +461,12 @@
 [Type] == "Mortal Ignorance" # [StashItem] == "true" //Über map
 [Type] == "Mortal Hope" # [StashItem] == "true" //Über map
 
+// Take all maps, comment out if you want to specify which map to pick up bellow
+[Category] == "Map" #[StashItem] == "true"
+
 // Comment out the maps bellow that you DON'T need
 
-// Level 68
+// Tier 1
 [Type] == "Crypt Map" # [StashItem] == "true"
 [Type] == "Desert Map" # [StashItem] == "true"
 [Type] == "Dunes Map" # [StashItem] == "true"
@@ -474,7 +475,7 @@
 [Type] == "Pit Map" # [StashItem] == "true"
 [Type] == "Tropical Island Map" # [StashItem] == "true"
 
-// Level 69
+// Tier 2
 [Type] == "Arcade Map" # [StashItem] == "true"
 [Type] == "Cemetery Map" # [StashItem] == "true"
 [Type] == "Channel Map" # [StashItem] == "true"
@@ -483,7 +484,7 @@
 [Type] == "Thicket Map" # [StashItem] == "true"
 [Type] == "Wharf Map" # [StashItem] == "true"
 
-// Level 70
+// Tier 3
 [Type] == "Ghetto Map" # [StashItem] == "true"
 [Type] == "Mud Geyser Map" # [StashItem] == "true"
 [Type] == "Museum Map" # [StashItem] == "true"
@@ -492,7 +493,7 @@
 [Type] == "Spider Lair Map" # [StashItem] == "true"
 [Type] == "Vaal Pyramid Map" # [StashItem] == "true"
 
-// Level 71
+// Tier 4
 [Type] == "Arena Map" # [StashItem] == "true"
 [Type] == "Overgrown Shrine Map" # [StashItem] == "true"
 [Type] == "Promenade Map" # [StashItem] == "true"
@@ -501,7 +502,7 @@
 [Type] == "Tunnel Map" # [StashItem] == "true"
 [Type] == "Phantasmagoria Map" # [StashItem] == "true"
 
-// Level 72
+// Tier 5
 [Type] == "Bog Map" # [StashItem] == "true"
 [Type] == "Coves Map" # [StashItem] == "true"
 [Type] == "Graveyard Map" # [StashItem] == "true"
@@ -509,7 +510,7 @@
 [Type] == "Underground Sea Map" # [StashItem] == "true"
 [Type] == "Villa Map" # [StashItem] == "true"
 
-// Level 73
+// Tier 6
 [Type] == "Arachnid Nest Map" # [StashItem] == "true"
 [Type] == "Catacomb Map" # [StashItem] == "true"
 [Type] == "Colonnade Map" # [StashItem] == "true"
@@ -517,58 +518,58 @@
 [Type] == "Strand Map" # [StashItem] == "true"
 [Type] == "Temple Map" # [StashItem] == "true"
 
-// Level 74
+// Tier 7
 [Type] == "Jungle Valley Map" # [StashItem] == "true"
 [Type] == "Terrace Map" # [StashItem] == "true"
 [Type] == "Mine Map" # [StashItem] == "true"
 [Type] == "Torture Chamber Map" # [StashItem] == "true"
 [Type] == "Waste Pool Map" # [StashItem] == "true"
 
-// Level 75
+// Tier 8
 [Type] == "Dark Forest Map" # [StashItem] == "true"
 [Type] == "Canyon Map" # [StashItem] == "true"
 [Type] == "Cells Map" # [StashItem] == "true"
 [Type] == "Dry Peninsula Map" # [StashItem] == "true"
 [Type] == "Orchard Map" # [StashItem] == "true"
 
-// Level 76
+// Tier 9
 [Type] == "Arid Lake Map" # [StashItem] == "true"
 [Type] == "Gorge Map" # [StashItem] == "true"
 [Type] == "Residence Map" # [StashItem] == "true"
 [Type] == "Underground River Map" # [StashItem] == "true"
 [Type] == "Malformation Map" # [StashItem] == "true"
 
-// Level 77
+// Tier 10
 [Type] == "Bazaar Map" # [StashItem] == "true"
 [Type] == "Necropolis Map" # [StashItem] == "true"
 [Type] == "Plateau Map" # [StashItem] == "true"
 [Type] == "Volcano Map" # [StashItem] == "true"
 
-// Level 78
+// Tier 11
 [Type] == "Academy Map" # [StashItem] == "true"
 [Type] == "Crematorium Map" # [StashItem] == "true"
 [Type] == "Precinct Map" # [StashItem] == "true"
 [Type] == "Springs Map" # [StashItem] == "true"
 
-// Level 79
+// Tier 12
 [Type] == "Arsenal Map" # [StashItem] == "true"
 [Type] == "Overgrown Ruin Map" # [StashItem] == "true"
 [Type] == "Shipyard Map" # [StashItem] == "true"
 [Type] == "Village Ruin Map" # [StashItem] == "true"
 
-// Level 80
+// Tier 13
 [Type] == "Courtyard Map" # [StashItem] == "true"
 [Type] == "Excavation Map" # [StashItem] == "true"
 [Type] == "Wasteland Map" # [StashItem] == "true"
 [Type] == "Waterways Map" # [StashItem] == "true"
 
-// Level 81
+// Tier 14
 [Type] == "Palace Map" # [StashItem] == "true"
 [Type] == "Shrine Map" # [StashItem] == "true"
 [Type] == "Vaal Temple Map" # [StashItem] == "true"
 [Type] == "Conservatory Map" # [StashItem] == "true"
 
-// Level 82
+// Tier 15
 [Type] == "Abyss Map" # [StashItem] == "true"
 [Type] == "Colosseum Map" # [StashItem] == "true"
 [Type] == "Core Map" # [StashItem] == "true"
@@ -864,8 +865,6 @@
 [Type] == "Engraved Wand" && [Rarity] == "Unique" //Midnight Bargain
 [Type] == "Prophecy Wand" && [Rarity] == "Unique" //Void Battery
 [Type] == "Tornado Wand" && [Rarity] == "Unique" //Piscator's Vigil
-
-
 
 [Type] == "Fishing Rod" && [Rarity] == "Unique" //Song of the Sirens 
 [Type] == "Fishing Rod" && [Rarity] == "Rare"

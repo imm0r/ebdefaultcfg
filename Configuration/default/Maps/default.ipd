@@ -1,11 +1,11 @@
 // Welcome to the map runner configuration file. Syntax is the same as in Pickit/default.ipd.
-// Keys available: [RunMap], [IgnoreMap], [MapLevel], [UpgradeQuality], [UpgradeToMagic], [UpgradeToRare], [RerollMods].
-// Whenever you use the "less than" symbol (<) for MapLevel, you'll need to add [MapLevel] >= "66" (could be more than 66 but never less). This is to avoid bug, sry about that.
+// Keys available: [RunMap], [IgnoreMap], [MapTier], [UpgradeQuality], [UpgradeToMagic], [UpgradeToRare], [RerollMods].
+// Whenever you use the "less than" symbol (<) for MapTier, you'll need to add [MapTier] >= "66" (could be more than 66 but never less). This is to avoid bug, sry about that.
 // Map upgrading will only be made on a map that has been selected by the bot to farm.
 // All the map mods can be found in ModsList.html file.
 
 // Example: Run rare maps level less than 69
-// [MapLevel] >= "66" && [MapLevel] < "69" && [Rarity] == "Rare" # [RunMap] == "true"
+// [MapTier] >= "66" && [MapTier] < "69" && [Rarity] == "Rare" # [RunMap] == "true"
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
@@ -14,10 +14,10 @@
 /////////////////////////////////////////////////////////////////////////////////////
 
 // Run any map between level 68 and 71
-[MapLevel] >= "68" && [MapLevel] < "71" # [RunMap] == "true"
+[MapTier] >= "1" && [MapTier] < "3" # [RunMap] == "true"
 
 // If you want to enable automatic quality upgrading
-// [MapLevel] >= "72" && [Quality] <= "16" && [Rarity] == "Normal" # [UpgradeQuality] == "true"
+// [MapTier] >= "4" && [Quality] <= "16" && [Rarity] == "Normal" # [UpgradeQuality] == "true"
 
 // If you want to transmut or alch maps before running them. Be careful UpgradeToMagic and UpgradeToRare aren't compatible.
 // [Rarity] == "Normal" # [UpgradeToMagic] == "true"
@@ -29,7 +29,7 @@
 // Ignore unique maps
 [Rarity] == "Unique" # [IgnoreMap] == "true"
 
-// If you wanna run Sacrifices, just uncomment following lines. Don't forget to comment first General Settings line ([MapLevel] >= "68" && [MapLevel] < "71" # [RunMap] == "true"),
+// If you wanna run Sacrifices, just uncomment following lines. Don't forget to comment first General Settings line ([MapTier] >= "68" && [MapTier] < "3" # [RunMap] == "true"),
 // to be sure that bot will run only Sacrifices.
 
 // [Type] == "Sacrifice at Dusk" # [RunMap] == "true"
@@ -119,7 +119,7 @@
 // [Rarity] == "Magic" # [IgnoreMap] == "true"
 // [Rarity] == "Normal" # [IgnoreMap] == "true"
 
-// Map level 68
+// Map tier 1
 // [Type] == "Crypt Map" # [IgnoreMap] == "true"
 // [Type] == "Desert Map" # [IgnoreMap] == "true"
 // [Type] == "Dunes Map" # [IgnoreMap] == "true"
@@ -128,7 +128,7 @@
 // [Type] == "Pit Map" # [IgnoreMap] == "true"
 // [Type] == "Tropical Island Map" # [IgnoreMap] == "true"
 // [Type] == "Untainted Paradise" # [IgnoreMap] == "true"
-// Map level 69
+// Map tier 2
 // [Type] == "Arcade Map" # [IgnoreMap] == "true"
 // [Type] == "Cemetery Map" # [IgnoreMap] == "true"
 // [Type] == "Channel Map" # [IgnoreMap] == "true"
@@ -136,7 +136,7 @@
 // [Type] == "Sewer Map" # [IgnoreMap] == "true"
 // [Type] == "Thicket Map" # [IgnoreMap] == "true"
 // [Type] == "Wharf Map" # [IgnoreMap] == "true"
-// Map level 70
+// Map tier 3
 // [Type] == "Ghetto Map" # [IgnoreMap] == "true"
 // [Type] == "Mud Geyser Map" # [IgnoreMap] == "true"
 // [Type] == "Museum Map" # [IgnoreMap] == "true"
@@ -144,7 +144,7 @@
 // [Type] == "Reef Map" # [IgnoreMap] == "true"
 // [Type] == "Spider Lair Map" # [IgnoreMap] == "true"
 // [Type] == "Vaal Pyramid Map" # [IgnoreMap] == "true"
-// Map Level 71
+// Map tier 4
 // [Type] == "Arena Map" # [IgnoreMap] == "true"
 // [Type] == "Overgrown Shrine Map" # [IgnoreMap] == "true"
 // [Type] == "Promenade Map" # [IgnoreMap] == "true"
@@ -152,64 +152,64 @@
 // [Type] == "Shore Map" # [IgnoreMap] == "true"
 // [Type] == "Spider Forest Map" # [IgnoreMap] == "true"
 // [Type] == "Tunnel Map" # [IgnoreMap] == "true"
-// Map level 72
+// Map tier 5
 // [Type] == "Bog Map" # [IgnoreMap] == "true"
 // [Type] == "Coves Map" # [IgnoreMap] == "true"
 // [Type] == "Graveyard Map" # [IgnoreMap] == "true"
 // [Type] == "Pier Map" # [IgnoreMap] == "true"
 // [Type] == "Underground Sea Map" # [IgnoreMap] == "true"
 // [Type] == "Villa Map" # [IgnoreMap] == "true"
-// Map level 73
+// Map tier 6
 // [Type] == "Arachnid Nest Map" # [IgnoreMap] == "true"
 // [Type] == "Catacomb Map" # [IgnoreMap] == "true"
 // [Type] == "Colonnade Map" # [IgnoreMap] == "true"
 // [Type] == "Dry Woods Map" # [IgnoreMap] == "true"
 // [Type] == "Strand Map" # [IgnoreMap] == "true"
 // [Type] == "Temple Map" # [IgnoreMap] == "true"
-// Map level 74
+// Map tier 7
 // [Type] == "Jungle Valley Map" # [IgnoreMap] == "true"
 // [Type] == "Terrace Map" # [IgnoreMap] == "true"
 // [Type] == "Mine Map" # [IgnoreMap] == "true"
 // [Type] == "Torture Chamber Map" # [IgnoreMap] == "true"
 // [Type] == "Waste Pool Map" # [IgnoreMap] == "true"
-// Map level 75
+// Map tier 8
 // [Type] == "Canyon Map" # [IgnoreMap] == "true"
 // [Type] == "Cells Map" # [IgnoreMap] == "true"
 // [Type] == "Dark Forest Map" # [IgnoreMap] == "true"
 // [Type] == "Dry Peninsula Map" # [IgnoreMap] == "true"
 // [Type] == "Orchard Map" # [IgnoreMap] == "true"
-// Map level 76
+// Map tier 9
 // [Type] == "Arid Lake Map" # [IgnoreMap] == "true"
 // [Type] == "Gorge Map" # [IgnoreMap] == "true"
 // [Type] == "Malformation Map" # [IgnoreMap] == "true"
 // [Type] == "Residence Map" # [IgnoreMap] == "true"
 // [Type] == "Underground River Map" # [IgnoreMap] == "true"
-// Map level 77
+// Map tier 10
 // [Type] == "Bazaar Map" # [IgnoreMap] == "true"
 // [Type] == "Necropolis Map" # [IgnoreMap] == "true"
 // [Type] == "Plateau Map" # [IgnoreMap] == "true"
 // [Type] == "Volcano Map" # [IgnoreMap] == "true"
-// Map level 78
+// Map tier 11
 // [Type] == "Academy Map" # [IgnoreMap] == "true"
 // [Type] == "Crematorium Map" # [IgnoreMap] == "true"
 // [Type] == "Precinct Map" # [IgnoreMap] == "true"
 // [Type] == "Springs Map" # [IgnoreMap] == "true"
-// Map level 79
+// Map tier 12
 // [Type] == "Arsenal Map" # [IgnoreMap] == "true"
 // [Type] == "Overgrown Ruin Map" # [IgnoreMap] == "true"
 // [Type] == "Shipyard Map" # [IgnoreMap] == "true"
 // [Type] == "Village Ruin Map" # [IgnoreMap] == "true"
-// Map level 80
+// Map tier 13
 // [Type] == "Courtyard Map" # [IgnoreMap] == "true"
 // [Type] == "Excavation Map" # [IgnoreMap] == "true"
 // [Type] == "Wasteland Map" # [IgnoreMap] == "true"
 // [Type] == "Waterways Map" # [IgnoreMap] == "true"
-// Map level 81
+// Map tier 14
 // [Type] == "Conservatory Map" # [IgnoreMap] == "true"
 // [Type] == "Palace Map" # [IgnoreMap] == "true"
 // [Type] == "Shrine Map" # [IgnoreMap] == "true"
 // [Type] == "Vaal Temple Map" # [IgnoreMap] == "true"
-// Map level 82
+// Map tier 15
 // [Type] == "Abyss Map" # [IgnoreMap] == "true"
 // [Type] == "Colosseum Map" # [IgnoreMap] == "true"
 // [Type] == "Core Map" # [IgnoreMap] == "true"
