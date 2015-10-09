@@ -4,8 +4,8 @@
 // Map upgrading will only be made on a map that has been selected by the bot to farm.
 // All the map mods can be found in ModsList.html file.
 
-// Example: Run rare maps level less than 69
-// [MapTier] >= "66" && [MapTier] < "69" && [Rarity] == "Rare" # [RunMap] == "true"
+// Example: Run rare maps level less than 3
+// [MapTier] >= "1" && [MapTier] < "3" && [Rarity] == "Rare" # [RunMap] == "true"
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
@@ -13,7 +13,7 @@
 //                                                                                 //
 /////////////////////////////////////////////////////////////////////////////////////
 
-// Run any map between level 68 and 71
+// Run any map between tier 1 and 3
 [MapTier] >= "1" && [MapTier] < "3" # [RunMap] == "true"
 
 // If you want to enable automatic quality upgrading
