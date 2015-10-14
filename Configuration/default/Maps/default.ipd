@@ -1,10 +1,10 @@
 // Welcome to the map runner configuration file. Syntax is the same as in Pickit/default.ipd.
 // Keys available: [RunMap], [IgnoreMap], [MapTier], [UpgradeQuality], [UpgradeToMagic], [UpgradeToRare], [RerollMods].
-// Whenever you use the "less than" symbol (<) for MapTier, you'll need to add [MapTier] >= "66" (could be more than 66 but never less). This is to avoid bug, sry about that.
+// Whenever you use the "less than" symbol (<) for MapTier, you'll need to add [MapTier] >= "1" (could be more than 66 but never less). This is to avoid bug, sry about that.
 // Map upgrading will only be made on a map that has been selected by the bot to farm.
 // All the map mods can be found in ModsList.html file.
 
-// Example: Run rare maps level less than 3
+// Example: Run all rare maps below tier 3
 // [MapTier] >= "1" && [MapTier] < "3" && [Rarity] == "Rare" # [RunMap] == "true"
 
 /////////////////////////////////////////////////////////////////////////////////////
@@ -14,7 +14,7 @@
 /////////////////////////////////////////////////////////////////////////////////////
 
 // Run any map between tier 1 and 3
-[MapTier] >= "1" && [MapTier] < "3" # [RunMap] == "true"
+[MapTier] >= "1" && [MapTier] <= "3" # [RunMap] == "true"
 
 // If you want to enable automatic quality upgrading
 // [MapTier] >= "4" && [Quality] <= "16" && [Rarity] == "Normal" # [UpgradeQuality] == "true"
@@ -97,7 +97,7 @@
 // [Type] == "Courtyard Map" # [IgnoreMap] == "true" //remove if your build has spell block.
 
 // INFERNAL BLOW NEEDED
-// [Type] == "Labyrinth Map" # [IgnoreMap] == "true" //remove if your build is infernal blow.
+// [Type] == "Terrace Map" # [IgnoreMap] == "true" //remove if your build is infernal blow.
 
 // MOM + ARCTIC ARMOUR to survive
 // [Type] == "Jungle Valley Map" # [IgnoreMap] == "true"// endless stream of small spiders, takes forever to kill.
@@ -105,7 +105,7 @@
 //RETARD BOSS
 // [Type] == "Residence Map" # [IgnoreMap] == "true"
 // [Type] == "Palace Map" # [IgnoreMap] == "true"
-// [Type] == "Maze Map" # [IgnoreMap] == "true"
+// [Type] == "Conservatory Map" # [IgnoreMap] == "true"
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
@@ -218,7 +218,7 @@
 
 
 // [Type] == "Crypt Map" && [Rarity] == "Unique" # [IgnoreMap] == "true" // The Coward's Trial
-// [Type] == "Mountain Ledge Map" && [Rarity] == "Unique" # [IgnoreMap] == "true" // Maelström of Chaos
+// [Type] == "Mountain Ledge Map" && [Rarity] == "Unique" # [IgnoreMap] == "true" // MaelstrÃ¶m of Chaos
 // [Type] == "Reef Map" && [Rarity] == "Unique" # [IgnoreMap] == "true" // Mao Kun
 // [Type] == "Vaal Pyramid Map" && [Rarity] == "Unique" # [IgnoreMap] == "true" // Vaults of Atziri
 // [Type] == "Overgrown Shrine Map" && [Rarity] == "Unique" # [IgnoreMap] == "true" // Acton's Nightmare
